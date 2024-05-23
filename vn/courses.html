@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<title>Khoá học</title>
+<link rel=stylesheet href=/stylesheet/output.css>
+<link rel=stylesheet href=/stylesheet/style.css>
+<link rel=icon type=image/x-icon href=/images/Favicon.png>
+<link rel=stylesheet href=/fontawesome/css/all.css>
+<link rel=stylesheet href=/stylesheet/shakeBtn.css>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300;500;600;700&display=swap" rel=stylesheet><style>body{font-family:"Encode Sans Expanded",sans-serif}</style>
+</head>
+<body class=relative>
+<button onclick=backToTopFunction() title="Go to top" id=backToTop-btn class="hidden fixed z-10 bottom-6 right-6 text-xl bg-MyBlue rounded-lg text-white px-3 py-2 border border-white"><i class="fa-solid fa-circle-arrow-up"></i></button>
+<a target=_blank href=https://zalo.me/0921438861 class=btn-call>
+<div class=btn-call__ico>
+<i class="fa-solid fa-phone"></i>
+</div>
+</a>
+<div class="fixed w-full top-0 z-10">
+<nav class="bg-MyBlue py-3 px-10 md:px-20 flex justify-between items-center">
+<a href=/index.html>
+<img src=/images/logo2.png alt="Logo Trường Anh Ngữ Sam" class=h-11>
+</a>
+<div class="text-white hidden lg:flex gap-8">
+<a href=/vn/index.html class="hover-border-bottom relative">Trang Chủ</a>
+<a href=/vn/courses.html class="border-b border-white pb-1 relative">Khóa Học</a>
+<a href=/vn/teachers.html class="hover-border-bottom relative">Giáo Viên</a>
+<a href=/vn/career.html class="hover-border-bottom relative">Tuyển Dụng</a>
+<a href=/vn/about.html class="hover-border-bottom relative">Về Chúng Tôi</a>
+</div>
+<div class="hidden lg:flex gap-5">
+<div class="text-white flex gap-2 items-center">
+<a href=/index.html class="font-medium hover:text-MyDarkYellow">EN</a>
+<div class="h-4 w-0.5 bg-gray-400"></div>
+<a href=/vn/index.html class="font-medium hover:text-MyDarkYellow">VN</a>
+</div>
+<a href=/vn/contact.html class=contact_btn>
+<p>Liên Hệ Ngay</p>
+</a>
+</div>
+<input hidden type=checkbox id=mobile-navbar class=checkbox-navbar>
+<label class="block lg:hidden" for=mobile-navbar><i class="fa-solid fa-bars text-2xl text-white"></i></label>
+<label for=mobile-navbar class=nav__overlay></label>
+<div class="responsive-navbar fixed top-0 flex flex-col gap-8 px-8 py-12 bg-white w-1/2 h-full left-0 text-xl text-center">
+<img src=/images/roundedsam.png alt="Logo Trường Anh Ngữ Sam" class="h-20 object-contain">
+<a href=/vn/index.html class=hover:text-MyYellow>Trang Chủ</a>
+<a href=/vn/courses.html class=hover:text-MyYellow>Khóa Học</a>
+<a href=/vn/teachers.html class=hover:text-MyYellow>Giáo Viên</a>
+<a href=/vn/career.html class=hover:text-MyYellow>Tuyển Dụng</a>
+<a href=/vn/about.html class=hover:text-MyYellow>Về Chúng Tôi</a>
+<a href=index.html class=hover:text-MyYellow>English</a>
+<a href=/vn/index.html class=hover:text-MyYellow>Viet Nam</a>
+</div>
+</nav>
+<div class="w-full z-10 p-3 flex justify-center text-lg font-medium text-white" style="background:linear-gradient(138deg,#20c9ff 36.7%,#0008bb 84.4%,#ffffff 119.7%)">Quét mã QR Zalo và đăng ký "LỚP HỌC THỬ MIỄN PHÍ" <button id=show_popup class="ml-2 hover:underline font-bold text-xl">Quét Ngay</button></div>
+</div>
+<div id=popup class="hidden fixed top-0 bottom-0 left-0 right-0 bg-black bg-opacity-50 z-20">
+<div class="bg-white mx-auto w-4/5 md:w-3/5 lg:w-5/6 xl:w-4/6 h-fit rounded-lg mt-28">
+<div class="border-b border-gray-300 px-5 py-3 flex justify-between items-center">
+<p class="text-xl font-semibold text-MyBlue">Trường Anh Ngữ Sam</p>
+<button id=hidden_popup class="text-2xl hover:text-MyDarkYellow"><i class="fa-solid fa-xmark"></i></button>
+</div>
+<div class="flex flex-col lg:flex-row gap-10 p-5">
+<div class="flex flex-col gap-2 mt-5">
+<p class="text-center text-2xl font-medium">🌟 Khám Phá Tiềm Năng Tiếng Anh Của Bạn! 🌟</p>
+<p class="text-center text-base mt-2">Quét mã QR Zalo và đăng ký LỚP HỌC THỬ MIỄN PHÍ với giáo viên tiếng Anh bản ngữ của chúng tôi. Tham gia Trường Anh Ngữ Sam hôm nay và bắt đầu hành trình đến sự lưu loát! 🚀📚</p>
+<p class="text-center mt-2 text-base">Sẵn sàng nâng cao tiếng Anh của bạn lên một tầm cao mới? Đăng ký một trong các khóa học của chúng tôi tại Trường Anh Ngữ Sam thật dễ dàng! Chỉ cần liên hệ với chúng tôi thông qua các phương thức sau để bắt đầu quá trình đăng ký. Liên hệ với chúng tôi hôm nay để bắt đầu hành trình của bạn!</p>
+<a href=tel:+84921438861 class="mx-auto mt-3 bg-MyBlue py-2.5 px-5 rounded-sm text-white w-fit hover:bg-MyDarkYellow">Gọi ngay</a>
+</div>
+<img src=/images/QR.jpg alt class="mx-auto w-full sm:w-96 sm:h-96 border-8 border-MyBlue">
+</div>
+</div>
+</div>
+<div class="px-10 md:px-20 pt-36">
+<div class="text-white bg-MyBlue rounded-xl p-20 course-banner text-center">
+<p class="text-3xl font-semibold">Khám Phá Tương Lai Với Tiếng Anh Tại Trường Sam!</p>
+<p class="w-1/2 mx-auto my-5">Tại Trường Anh Ngữ Sam, làm chủ ngôn ngữ tiếng Anh với sự hướng dẫn cá nhân từ các giáo viên hàng đầu trong một môi trường nuôi dưỡng. Bắt đầu hành trình của bạn hướng tới sự thông thạo và mở ra cơ hội toàn cầu ngay hôm nay</p>
+<a href=#Courses class="w-fit mx-auto flex items-center gap-2 bg-MyBlue rounded-full py-3 px-4 border border-MyBlue hover:bg-transparent hover:border-white">
+<p>Khám Phá Ngay</p>
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+</div>
+<div id=Courses class="px-10 md:px-20 py-28">
+<div class="text-center w-full lg:w-1/2 mx-auto">
+<p class="text-3xl font-semibold">Các <span class=text-MyDarkYellow>Khóa Học</span> Của Chúng Tôi</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12 mt-10">
+<div>
+<img src=/images/online.jpg class="rounded-xl h-64 object-cover w-full">
+<p class="text-xl font-semibold mt-4">Lớp Học Trực Tuyến</p>
+<p class=my-4>Tận hưởng sự linh hoạt và tiện lợi với các lớp học trực tuyến của chúng tôi, có thể truy cập từ bất cứ đâu trên thế giới. Những buổi học này lý tưởng cho những người học ưa thích các nền tảng kỹ thuật số.</p>
+<a href=https://zalo.me/0921438861 class="flex gap-2 items-center bg-white rounded-full w-fit text-MyBlue py-3 px-4 text-xs border border-MyBlue hover:bg-MyBlue hover:text-white">
+<p>Đăng ký ngay</p>
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+<div>
+<img src=/images/offline.jpg class="rounded-xl h-64 object-cover w-full">
+<p class="text-xl font-semibold mt-4">Lớp Học Trực Tiếp</p>
+<p class=my-4>Trải nghiệm học tập truyền thống trong môi trường lớp học. Các lớp học trực tiếp của chúng tôi rất phù hợp cho những học viên phát triển mạnh mẽ trong môi trường học tập trực tiếp.</p>
+<a href=https://zalo.me/0921438861 class="flex gap-2 items-center bg-white rounded-full w-fit text-MyBlue py-3 px-4 text-xs border border-MyBlue hover:bg-MyBlue hover:text-white">
+<p>Đăng ký ngay</p>
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+<div>
+<img src=/images/oneone.jpg class="rounded-xl h-64 object-cover w-full">
+<p class="text-xl font-semibold mt-4">Lớp Học Một Kèm Một</p>
+<p class=my-4>Hưởng lợi từ sự chú ý cá nhân với các lớp học một kèm một của chúng tôi. Được điều chỉnh theo tốc độ và phong cách học tập cá nhân của bạn, những buổi học này đảm bảo tiến bộ tối đa.</p>
+<a href=https://zalo.me/0921438861 class="flex gap-2 items-center bg-white rounded-full w-fit text-MyBlue py-3 px-4 text-xs border border-MyBlue hover:bg-MyBlue hover:text-white">
+<p>Đăng ký ngay</p>
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+<div>
+<img src=/images/group.jpg class="rounded-xl h-64 object-cover w-full">
+<p class="text-xl font-semibold mt-4">Lớp Học Nhóm</p>
+<p class=my-4>Tham gia các lớp học nhóm tương tác của chúng tôi để có trải nghiệm học tập hợp tác. Tham gia với bạn bè và tham gia vào các cuộc thảo luận và hoạt động sôi nổi.</p>
+<a href=https://zalo.me/0921438861 class="flex gap-2 items-center bg-white rounded-full w-fit text-MyBlue py-3 px-4 text-xs border border-MyBlue hover:bg-MyBlue hover:text-white">
+<p>Đăng ký ngay</p>
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+<div>
+<img src=/images/hometutor.jpg class="rounded-xl h-64 object-cover w-full">
+<p class="text-xl font-semibold mt-4">Gia Sư Tại Nhà</p>
+<p class=my-4>Tận hưởng sự tiện lợi của việc học tại nhà với dịch vụ gia sư tại nhà của chúng tôi. Các gia sư chuyên gia của chúng tôi đến tận nhà bạn, cung cấp môi trường học tập thoải mái và cá nhân hóa.</p>
+<a href=https://zalo.me/0921438861 class="flex gap-2 items-center bg-white rounded-full w-fit text-MyBlue py-3 px-4 text-xs border border-MyBlue hover:bg-MyBlue hover:text-white">
+<p>Đăng ký ngay</p>
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+<div>
+<img src=/images/eps.jpg class="rounded-xl h-64 object-cover w-full">
+<p class="text-xl font-semibold mt-4">Tiếng Anh Chuyên Môn (ESP)</p>
+<p class=my-4>Các khóa học ESP nhắm đến những học viên có nhu cầu ngôn ngữ cụ thể liên quan đến nghề nghiệp hoặc lĩnh vực của họ. Ví dụ bao gồm Tiếng Anh Y Khoa, Tiếng Anh Công Nghệ Thông Tin, hoặc Tiếng Anh Du Lịch.</p>
+<a href=https://zalo.me/0921438861 class="flex gap-2 items-center bg-white rounded-full w-fit text-MyBlue py-3 px-4 text-xs border border-MyBlue hover:bg-MyBlue hover:text-white">
+<p>Đăng ký ngay</p>
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="detail-banner relative">
+<div class="py-14 flex flex-wrap px-10 md:px-20 justify-around gap-10 text-white">
+<div class="flex gap-5 items-center">
+<i class="fa-solid fa-users-viewfinder text-5xl"></i>
+<div class="flex flex-col items-center">
+<p class=text-4xl>120+</p>
+<p class="text-lg font-light">Khóa Học Trực Tuyến</p>
+</div>
+</div>
+<div class="flex gap-5 items-center">
+<i class="fa-solid fa-book-open-reader text-5xl"></i>
+<div class="flex flex-col items-center">
+<p class=text-4xl>3000</p>
+<p class="text-lg font-light">Học Viên Đã Ghi Danh</p>
+</div>
+</div>
+<div class="flex gap-5 items-center">
+<i class="fa-solid fa-chalkboard-user text-5xl"></i>
+<div class="flex flex-col items-center">
+<p class=text-4xl>70+</p>
+<p class="text-lg font-light">Giảng Viên Chuyên Gia</p>
+</div>
+</div>
+<div class="flex gap-5 items-center">
+<i class="fa-regular fa-clock text-5xl"></i>
+<div class="flex flex-col items-center">
+<p class=text-4xl>9000</p>
+<p class="text-lg font-light">Giờ Nội Dung</p>
+</div>
+</div>
+</div>
+</div>
+<div class="px-10 md:px-20 py-24">
+<div class="text-white bg-MyBlue rounded-xl p-10 about-banner text-center">
+<p class="text-MyDarkYellow text-base font-semibold">Tham Gia Đội Ngũ Của Chúng Tôi</p>
+<p class="text-3xl font-semibold mt-3">Cơ Hội Nghề Nghiệp Tại Trường Anh Ngữ Sam</p>
+<p class="w-1/2 mx-auto my-5">Trở thành một phần của Trường Anh Ngữ Sam và đóng góp vào việc định hình tương lai của giáo dục ngôn ngữ. Chúng tôi đang tìm kiếm những giáo viên nhiệt huyết để mang đến trải nghiệm học tiếng Anh tuyệt vời. Tham gia cùng chúng tôi trong sứ mệnh truyền cảm hứng và trao quyền cho học sinh trên toàn thế giới</p>
+<div class="flex justify-center gap-3">
+<a href=/vn/career.html class="flex items-center gap-2 bg-MyDarkYellow rounded-full py-3 px-4 border border-MyDarkYellow hover:bg-transparent hover:border-white">
+<p>Mô Tả Công Việc</p>
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+<a href=/vn/contact.html class="flex items-center gap-2 bg-MyBlue rounded-full py-3 px-4 border border-MyBlue hover:bg-transparent hover:border-white">
+<p>Liên Hệ</p>
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+</div>
+</div>
+<footer class="bg-MyBlue px-10 md:px-20 pt-20 pb-5 text-white">
+<div class="flex justify-between flex-wrap gap-5 xl:gap-14">
+<div class>
+<img src=/images/logo.png alt class=h-20>
+<div class="flex gap-6 w-fit mx-auto mt-7">
+<a href=https://www.facebook.com/samsenglishschool1111 target=_blank class="text-lg transition-transform duration-300 ease-in-out transform hover:scale-150"><i class="fa-brands fa-facebook-f"></i></a>
+<a href=https://www.instagram.com/samsenglishschool target=_blank class="text-lg transition-transform duration-300 ease-in-out transform hover:scale-150"><i class="fa-brands fa-instagram"></i></a>
+<a href=https://www.tiktok.com/@samsenglishschool target=_blank class="text-lg transition-transform duration-300 ease-in-out transform hover:scale-150"><i class="fa-brands fa-tiktok"></i></a>
+<a href=https://www.youtube.com/@samsenglishschool6156 target=_blank class="text-lg htransition-transform duration-300 ease-in-out transform hover:scale-150"><i class="fa-brands fa-youtube"></i></a>
+<a href=https://wa.me/+84777364272 target=_blank class="text-lg transition-transform duration-300 ease-in-out transform hover:scale-150"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+</div>
+<div class="flex flex-col gap-7 text-base">
+<p class="text-MyYellow text-lg font-medium">Liên Kết Nhanh</p>
+<div class="flex flex-col text-center gap-6">
+<a href=/index.html class="hover:text-MyYellow hover:underline">Trang Chủ</a>
+<a href=/courses.html class="hover:text-MyYellow hover:underline">Khóa Học</a>
+<a href=/about.html class="hover:text-MyYellow hover:underline">Về Chúng Tôi</a>
+<a href=/contact.html class="hover:text-MyYellow hover:underline">Liên Hệ</a>
+</div>
+</div>
+<div class="flex flex-col gap-7 text-base">
+<p class="text-MyYellow text-lg font-medium">Các Chương Trình</p>
+<div class="flex flex-col text-center gap-6">
+<a href=/courses.html class="hover:text-MyYellow hover:underline">IELTS</a>
+<a href=/courses.html class="hover:text-MyYellow hover:underline">Cambridge</a>
+<a href=/courses.html class="hover:text-MyYellow hover:underline">Kinh Doanh</a>
+<a href=/courses.html class="hover:text-MyYellow hover:underline">Xem Thêm</a>
+</div>
+</div>
+<div class="flex flex-col gap-7 text-base w-full lg:w-2/5">
+<p class="text-MyYellow text-lg font-medium">Về Trường Anh Ngữ Sam</p>
+<p class=text-sm>Tại Trường Anh Ngữ Sam, chúng tôi cam kết tạo ra sự khác biệt. Chúng tôi mời bạn tham gia vào cộng đồng của chúng tôi và bắt đầu một hành trình thay đổi tích cực và phát triển. Cùng nhau, chúng ta có thể tạo ra sự ảnh hưởng đáng kể đến cuộc sống và sự nghiệp của bạn.
+</p>
+</div>
+</div>
+<div class="h-0.5 w-full bg-gray-400 mt-10 mb-5"></div>
+<p class="text-center italic text-xs">© 2019 Trường Anh Ngữ Sam, Đã Đăng Ký Bản Quyền</p>
+</footer>
+</body>
+<script src=/main.js></script>
+</html>

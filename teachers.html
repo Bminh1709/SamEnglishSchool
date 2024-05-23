@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<title>Teachers</title>
+<link rel=stylesheet href=/stylesheet/output.css>
+<link rel=stylesheet href=/stylesheet/style.css>
+<link rel=icon type=image/x-icon href=/images/Favicon.png>
+<link rel=stylesheet href=/fontawesome/css/all.css>
+<link rel=stylesheet href=/stylesheet/shakeBtn.css>
+<style>body{font-family:"Poppins",sans-serif}</style>
+<style>@font-face{font-family:'Poppins';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLDz8Z1JlFc-K.woff2) format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Poppins';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Poppins';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v21/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Poppins';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v21/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Poppins';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2) format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Poppins';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Poppins';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2) format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Poppins';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}</style>
+</head>
+<body>
+<button onclick=backToTopFunction() title="Go to top" id=backToTop-btn class="hidden fixed z-10 bottom-6 right-6 text-xl bg-MyBlue rounded-lg text-white px-3 py-2 border border-white"><i class="fa-solid fa-circle-arrow-up"></i></button>
+<a target=_blank href=https://zalo.me/0921438861 class=btn-call>
+<div class=btn-call__ico>
+<i class="fa-solid fa-phone"></i>
+</div>
+</a>
+<div class="fixed w-full top-0 z-10">
+<nav class="bg-MyBlue py-3 px-10 md:px-20 flex justify-between items-center">
+<a href=/index.html>
+<img src=/images/logo2.png alt="SAM'S English School Logo" class=h-11>
+</a>
+<div class="text-white hidden lg:flex gap-8">
+<a href=/index.html class="hover-border-bottom relative">Home</a>
+<a href=/courses.html class="hover-border-bottom relative">Courses</a>
+<a href=/teachers.html class="border-b border-white pb-1 relative">Teachers</a>
+<a href=/career.html class="hover-border-bottom relative">Career</a>
+<a href=/about.html class="hover-border-bottom relative">About Us</a>
+</div>
+<div class="hidden lg:flex gap-5">
+<div class="text-white flex gap-2 items-center">
+<a href=index.html class="font-medium hover:text-MyDarkYellow">EN</a>
+<div class="h-4 w-0.5 bg-gray-400"></div>
+<a href=/vn/index.html class="font-medium hover:text-MyDarkYellow">VN</a>
+</div>
+<a href=/contact.html class=contact_btn>
+<p>Contact Now</p>
+</a>
+</div>
+<input hidden type=checkbox id=mobile-navbar class=checkbox-navbar>
+<label class="block lg:hidden" for=mobile-navbar><i class="fa-solid fa-bars text-2xl text-white"></i></label>
+<label for=mobile-navbar class=nav__overlay></label>
+<div class="responsive-navbar fixed top-0 flex flex-col gap-8 px-8 py-12 bg-white w-1/2 h-full left-0 text-xl text-center">
+<img src=/images/roundedsam.png alt="SAM'S English School Logo" class="h-20 object-contain">
+<a href=/index.html class=hover:text-MyYellow>Home</a>
+<a href=/courses.html class=hover:text-MyYellow>Courses</a>
+<a href=/teachers.html class=hover:text-MyYellow>Teachers</a>
+<a href=/career.html class=hover:text-MyYellow>Career</a>
+<a href=/about.html class=hover:text-MyYellow>About Us</a>
+</div>
+</nav>
+<div class="w-full z-10 p-3 flex justify-center text-lg font-medium text-white" style="background:linear-gradient(138deg,#20c9ff 36.7%,#0008bb 84.4%,#ffffff 119.7%)">Scan the Zalo QR code and schedule your "FREE DEMO CLASS" <button id=show_popup class="ml-2 hover:underline font-bold text-xl">Scan Now</button></div>
+</div>
+<div id=popup class="hidden fixed top-0 bottom-0 left-0 right-0 bg-black bg-opacity-50 z-20">
+<div class="bg-white mx-auto w-4/5 md:w-3/5 lg:w-5/6 xl:w-4/6 h-fit rounded-lg mt-28">
+<div class="border-b border-gray-300 px-5 py-3 flex justify-between items-center">
+<p class="text-xl font-semibold text-MyBlue">Sam's English School</p>
+<button id=hidden_popup class="text-2xl hover:text-MyDarkYellow"><i class="fa-solid fa-xmark"></i></button>
+</div>
+<div class="flex flex-col lg:flex-row gap-10 p-5">
+<div class="flex flex-col gap-2 mt-5">
+<p class="text-center text-2xl font-medium">🌟 Unlock Your English Potential! 🌟</p>
+<p class="text-center text-base mt-2">Scan the Zalo QR code and schedule your FREE DEMO CLASS with our expert native English teacher. Join Sam's English School today and start your journey to fluency! 🚀📚</p>
+<p class="text-center mt-2 text-base">Ready to take your English to the next level? Enrolling in one of our courses at Sam's English School is easy! Simply reach out to us through the following methods to start your registration. Contact us today to begin your journey!</p>
+<a href=tel:+84921438861 class="mx-auto mt-3 bg-MyBlue py-2.5 px-5 rounded-sm text-white w-fit hover:bg-MyDarkYellow">Call now</a>
+</div>
+<img src=/images/QR.jpg alt class="mx-auto w-full sm:w-96 sm:h-96 border-8 border-MyBlue">
+</div>
+</div>
+</div>
+<div class="px-10 md:px-20 pt-36">
+<div class="text-white bg-MyBlue rounded-xl p-10 teacher-banner text-center">
+<p class="text-MyDarkYellow text-base font-semibold">Join Our Team</p>
+<p class="text-3xl font-semibold mt-3">Careers at Sam's English School</p>
+<p class="w-1/2 mx-auto my-5">Become a part of Sam's English School and contribute to shaping the future of language education. We're looking for passionate educators to deliver exceptional English learning experiences. Join us in our mission to inspire and empower students worldwide</p>
+<div class="flex justify-center gap-3">
+<a href=/career.html class="flex items-center gap-2 bg-MyDarkYellow rounded-full py-3 px-4 border border-MyDarkYellow hover:bg-transparent hover:border-white">
+<p>Job Description</p>
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+<a href=/contact.html class="flex items-center gap-2 bg-MyBlue rounded-full py-3 px-4 border border-MyBlue hover:bg-transparent hover:border-white">
+<p>Contact</p>
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="px-10 md:px-20 pt-16 mb-36">
+<p class="text-2xl font-semibold text-MyBlue text-center">Meet the team</p>
+<div class="flex justify-center gap-8 flex-wrap mt-14">
+<div class="flex flex-col items-center">
+<img src="/teachers/Andy Bry.png" class="rounded-full w-40 h-40 object-cover">
+<img src=/images/UKFlag.png alt class="h-5 mt-4">
+<p class="text-lg font-semibold mt-2">Andy Bry</p>
+</div>
+<div class="flex flex-col items-center">
+<img src=/teachers//David.png class="rounded-full w-40 h-40 object-cover">
+<img src=/images/UKFlag.png alt class="h-5 mt-4">
+<p class="text-lg font-semibold mt-2">David</p>
+</div>
+<div class="flex flex-col items-center">
+<img src=/teachers/Rosemary.png class="rounded-full w-40 h-40 object-cover">
+<img src=/images/UKFlag.png alt class="h-5 mt-4">
+<p class="text-lg font-semibold mt-2">Rosemary</p>
+</div>
+<div class="flex flex-col items-center">
+<img src="/teachers/Colin Hancok.png" class="rounded-full w-40 h-40 object-cover">
+<img src=/images/UKFlag.png alt class="h-5 mt-4">
+<p class="text-lg font-semibold mt-2">Colin Hancock</p>
+</div>
+<div class="flex flex-col items-center">
+<img src=/teachers//Michael.png class="rounded-full w-40 h-40 object-cover">
+<img src=/images/UKFlag.png alt class="h-5 mt-4">
+<p class="text-lg font-semibold mt-2">Michael</p>
+</div>
+<div class="flex flex-col items-center">
+<img src=/teachers/Andrew.png class="rounded-full w-40 h-40 object-cover">
+<img src=/images/AustraliaFlag.png alt class="h-5 mt-4">
+<p class="text-lg font-semibold mt-2">Andrew</p>
+</div>
+<div class="flex flex-col items-center">
+<img src=/teachers/Joni.png class="rounded-full w-40 h-40 object-cover">
+<img src=/images/AustraliaFlag.png alt class="h-5 mt-4">
+<p class="text-lg font-semibold mt-2">Joni</p>
+</div>
+<div class="flex flex-col items-center">
+<div class=relative>
+<img src=/teachers/Dani.png class="rounded-full w-40 h-40 object-cover">
+</div>
+<img src=/images/USFlag.png alt class="h-5 mt-4">
+<p class="text-lg font-semibold mt-2">Dani</p>
+</div>
+<div class="flex flex-col items-center">
+<div class=relative>
+<img src="/teachers/Ken Wing.png" class="rounded-full w-40 h-40 object-cover">
+</div>
+<img src=/images/USFlag.png alt class="h-5 mt-4">
+<p class="text-lg font-semibold mt-2">Ken Wing</p>
+</div>
+<div class="flex flex-col items-center">
+<div class=relative>
+<img src=/teachers/sylvia.png class="rounded-full w-40 h-40 object-cover">
+</div>
+<img src=/images/USFlag.png alt class="h-5 mt-4">
+<p class="text-lg font-semibold mt-2">Sylvia</p>
+</div>
+<div class="flex flex-col items-center">
+<div class=relative>
+<img src="/teachers/Bruce Wilson.png" class="rounded-full w-40 h-40 object-cover">
+</div>
+<img src=/images/USFlag.png alt class="h-5 mt-4">
+<p class="text-lg font-semibold mt-2">Bruce Wilson</p>
+</div>
+<div class="flex flex-col items-center">
+<div class=relative>
+<img src=/teachers/Christopher.png class="rounded-full w-40 h-40 object-cover">
+</div>
+<img src=/images/USFlag.png alt class="h-5 mt-4">
+<p class="text-lg font-semibold mt-2">Christopher</p>
+</div>
+<div class="flex flex-col items-center">
+<div class=relative>
+<img src="/teachers/Dawn Eloisa.png" class="rounded-full w-40 h-40 object-cover">
+</div>
+<img src=/images/USFlag.png alt class="h-5 mt-4">
+<p class="text-lg font-semibold mt-2">Dawn Eloisa</p>
+</div>
+<div class="flex flex-col items-center">
+<div class=relative>
+<img src="/teachers/Franck L.png" class="rounded-full w-40 h-40 object-cover">
+</div>
+<img src=/images/USFlag.png alt class="h-5 mt-4">
+<p class="text-lg font-semibold mt-2">Franck L</p>
+</div>
+<div class="flex flex-col items-center">
+<div class=relative>
+<img src="/teachers/Kris H.png" class="rounded-full w-40 h-40 object-cover">
+</div>
+<img src=/images/USFlag.png alt class="h-5 mt-4">
+<p class="text-lg font-semibold mt-2">Kris H</p>
+</div>
+<div class="flex flex-col items-center">
+<div class=relative>
+<img src=/teachers/Vicky.png class="rounded-full w-40 h-40 object-cover">
+</div>
+<img src=/images/USFlag.png alt class="h-5 mt-4">
+<p class="text-lg font-semibold mt-2">Vicky</p>
+</div>
+<div class="flex flex-col items-center">
+<div class=relative>
+<img src="/teachers/Sebastian Duran.png" class="rounded-full w-40 h-40 object-cover">
+</div>
+<img src=/images/USFlag.png alt class="h-5 mt-4">
+<p class="text-lg font-semibold mt-2">Sebastian Duran</p>
+</div>
+<div class="flex flex-col items-center">
+<div class=relative>
+<img src="/teachers/John L.png" class="rounded-full w-40 h-40 object-cover">
+</div>
+<img src=/images/USFlag.png alt class="h-5 mt-4">
+<p class="text-lg font-semibold mt-2">John L</p>
+</div>
+<div class="flex flex-col items-center">
+<div class=relative>
+<img src=/teachers/Jeff.png class="rounded-full w-40 h-40 object-cover">
+</div>
+<img src=/images/USFlag.png alt class="h-5 mt-4">
+<p class="text-lg font-semibold mt-2">Jeff</p>
+</div>
+<div class="flex flex-col items-center">
+<div class=relative>
+<img src="/teachers/Caroline Anne.png" class="rounded-full w-40 h-40 object-cover">
+</div>
+<img src=/images/USFlag.png alt class="h-5 mt-4">
+<p class="text-lg font-semibold mt-2">Caroline Anne</p>
+</div>
+<div class="flex flex-col items-center">
+<div class=relative>
+<img src=/teachers/Zandra.png class="rounded-full w-40 h-40 object-cover">
+</div>
+<img src=/images/USFlag.png alt class="h-5 mt-4">
+<p class="text-lg font-semibold mt-2">Zandra</p>
+</div>
+</div>
+</div>
+<footer class="bg-MyBlue px-10 md:px-20 pt-20 pb-5 text-white">
+<div class="flex justify-between flex-wrap gap-5 xl:gap-14">
+<div class>
+<img src=/images/logo.png alt class=h-20>
+<div class="flex gap-6 w-fit mx-auto mt-7">
+<a href=https://www.facebook.com/samsenglishschool1111 target=_blank class="text-lg transition-transform duration-300 ease-in-out transform hover:scale-150"><i class="fa-brands fa-facebook-f"></i></a>
+<a href=https://www.instagram.com/samsenglishschool target=_blank class="text-lg transition-transform duration-300 ease-in-out transform hover:scale-150"><i class="fa-brands fa-instagram"></i></a>
+<a href=https://www.tiktok.com/@samsenglishschool target=_blank class="text-lg transition-transform duration-300 ease-in-out transform hover:scale-150"><i class="fa-brands fa-tiktok"></i></a>
+<a href=https://www.youtube.com/@samsenglishschool6156 target=_blank class="text-lg htransition-transform duration-300 ease-in-out transform hover:scale-150"><i class="fa-brands fa-youtube"></i></a>
+<a href=https://wa.me/+84777364272 target=_blank class="text-lg transition-transform duration-300 ease-in-out transform hover:scale-150"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+</div>
+<div class="flex flex-col gap-7 text-base">
+<p class="text-MyYellow text-lg font-medium">Quick Links</p>
+<div class="flex flex-col text-center gap-6">
+<a href=/index.html class="hover:text-MyYellow hover:underline">Home</a>
+<a href=/courses.html class="hover:text-MyYellow hover:underline">Courses</a>
+<a href=/about.html class="hover:text-MyYellow hover:underline">About Us</a>
+<a href=/contact.html class="hover:text-MyYellow hover:underline">Contact</a>
+</div>
+</div>
+<div class="flex flex-col gap-7 text-base">
+<p class="text-MyYellow text-lg font-medium">Our Programs</p>
+<div class="flex flex-col text-center gap-6">
+<a href=/courses.html class="hover:text-MyYellow hover:underline">IELTS</a>
+<a href=/courses.html class="hover:text-MyYellow hover:underline">Cambridge</a>
+<a href=/courses.html class="hover:text-MyYellow hover:underline">Business</a>
+<a href=/courses.html class="hover:text-MyYellow hover:underline">More</a>
+</div>
+</div>
+<div class="flex flex-col gap-7 text-base w-full lg:w-2/5">
+<p class="text-MyYellow text-lg font-medium">About Sam's English School</p>
+<p class=text-sm>At Sam's English School, we are committed to making a difference. We invite you to join our community and embark on a journey of positive change and growth. Together, we can make a significant impact on your life and career.
+</p>
+</div>
+</div>
+<div class="h-0.5 w-full bg-gray-400 mt-10 mb-5"></div>
+<p class="text-center italic text-xs">© 2019 Sam's English School, All Rights Reserved</p>
+</footer>
+</body>
+<script src=main.js></script>
+</script>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<title>Chi tiết</title>
+<link rel=stylesheet href=/stylesheet/output.css>
+<link rel=stylesheet href=/stylesheet/style.css>
+<link rel=icon type=image/x-icon href=/images/Favicon.png>
+<link rel=stylesheet href=/fontawesome/css/all.css>
+<link rel=stylesheet href=/stylesheet/shakeBtn.css>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300;500;600;700&display=swap" rel=stylesheet><style>body{font-family:"Encode Sans Expanded",sans-serif}</style>
+</head>
+<body class=relative>
+<button onclick=backToTopFunction() title="Go to top" id=backToTop-btn class="hidden fixed z-10 bottom-6 right-6 text-xl bg-MyBlue rounded-lg text-white px-3 py-2 border border-white"><i class="fa-solid fa-circle-arrow-up"></i></button>
+<a target=_blank href=https://zalo.me/0921438861 class=btn-call>
+<div class=btn-call__ico>
+<i class="fa-solid fa-phone"></i>
+</div>
+</a>
+<div class="fixed w-full top-0 z-10">
+<nav class="bg-MyBlue py-3 px-10 md:px-20 flex justify-between items-center">
+<a href=/index.html>
+<img src=/images/logo2.png alt="Logo Trường Anh Ngữ Sam" class=h-11>
+</a>
+<div class="text-white hidden lg:flex gap-8">
+<a href=/vn/index.html class="hover-border-bottom relative">Trang Chủ</a>
+<a href=/vn/courses.html class="hover-border-bottom relative">Khóa Học</a>
+<a href=/vn/teachers.html class="hover-border-bottom relative">Giáo Viên</a>
+<a href=/vn/career.html class="hover-border-bottom relative">Tuyển Dụng</a>
+<a href=/vn/about.html class="border-b border-white pb-1 relative">Về Chúng Tôi</a>
+</div>
+<div class="hidden lg:flex gap-5">
+<div class="text-white flex gap-2 items-center">
+<a href=/index.html class="font-medium hover:text-MyDarkYellow">EN</a>
+<div class="h-4 w-0.5 bg-gray-400"></div>
+<a href=/vn/index.html class="font-medium hover:text-MyDarkYellow">VN</a>
+</div>
+<a href=/vn/contact.html class=contact_btn>
+<p>Liên Hệ Ngay</p>
+</a>
+</div>
+<input hidden type=checkbox id=mobile-navbar class=checkbox-navbar>
+<label class="block lg:hidden" for=mobile-navbar><i class="fa-solid fa-bars text-2xl text-white"></i></label>
+<label for=mobile-navbar class=nav__overlay></label>
+<div class="responsive-navbar fixed top-0 flex flex-col gap-8 px-8 py-12 bg-white w-1/2 h-full left-0 text-xl text-center">
+<img src=/images/roundedsam.png alt="Logo Trường Anh Ngữ Sam" class="h-20 object-contain">
+<a href=/vn/index.html class=hover:text-MyYellow>Trang Chủ</a>
+<a href=/vn/courses.html class=hover:text-MyYellow>Khóa Học</a>
+<a href=/vn/teachers.html class=hover:text-MyYellow>Giáo Viên</a>
+<a href=/vn/career.html class=hover:text-MyYellow>Tuyển Dụng</a>
+<a href=/vn/about.html class=hover:text-MyYellow>Về Chúng Tôi</a>
+<a href=index.html class=hover:text-MyYellow>English</a>
+<a href=/vn/index.html class=hover:text-MyYellow>Viet Nam</a>
+</div>
+</nav>
+<div class="w-full z-10 p-3 flex justify-center text-lg font-medium text-white" style="background:linear-gradient(138deg,#20c9ff 36.7%,#0008bb 84.4%,#ffffff 119.7%)">Quét mã QR Zalo và đăng ký "LỚP HỌC THỬ MIỄN PHÍ" <button id=show_popup class="ml-2 hover:underline font-bold text-xl">Quét Ngay</button></div>
+</div>
+<div id=popup class="hidden fixed top-0 bottom-0 left-0 right-0 bg-black bg-opacity-50 z-20">
+<div class="bg-white mx-auto w-4/5 md:w-3/5 lg:w-5/6 xl:w-4/6 h-fit rounded-lg mt-28">
+<div class="border-b border-gray-300 px-5 py-3 flex justify-between items-center">
+<p class="text-xl font-semibold text-MyBlue">Trường Anh Ngữ Sam</p>
+<button id=hidden_popup class="text-2xl hover:text-MyDarkYellow"><i class="fa-solid fa-xmark"></i></button>
+</div>
+<div class="flex flex-col lg:flex-row gap-10 p-5">
+<div class="flex flex-col gap-2 mt-5">
+<p class="text-center text-2xl font-medium">🌟 Khám Phá Tiềm Năng Tiếng Anh Của Bạn! 🌟</p>
+<p class="text-center text-base mt-2">Quét mã QR Zalo và đăng ký LỚP HỌC THỬ MIỄN PHÍ với giáo viên tiếng Anh bản ngữ của chúng tôi. Tham gia Trường Anh Ngữ Sam hôm nay và bắt đầu hành trình đến sự lưu loát! 🚀📚</p>
+<p class="text-center mt-2 text-base">Sẵn sàng nâng cao tiếng Anh của bạn lên một tầm cao mới? Đăng ký một trong các khóa học của chúng tôi tại Trường Anh Ngữ Sam thật dễ dàng! Chỉ cần liên hệ với chúng tôi thông qua các phương thức sau để bắt đầu quá trình đăng ký. Liên hệ với chúng tôi hôm nay để bắt đầu hành trình của bạn!</p>
+<a href=tel:+84921438861 class="mx-auto mt-3 bg-MyBlue py-2.5 px-5 rounded-sm text-white w-fit hover:bg-MyDarkYellow">Gọi ngay</a>
+</div>
+<img src=/images/QR.jpg alt class="mx-auto w-full sm:w-96 sm:h-96 border-8 border-MyBlue">
+</div>
+</div>
+</div>
+<div class="px-10 md:px-20 my-40">
+<div class="text-center flex flex-col gap-3">
+<p class="text-MyDarkYellow text-base font-semibold">VỀ CHÚNG TÔI</p>
+<p class="text-4xl font-medium mx-auto">Chúng tôi là cộng đồng của những người tạo nên sự thay đổi:<br> chúng tôi giáo dục, truyền cảm hứng</p>
+<p class="lg:w-2/3 mx-auto text-base">Khám phá niềm đam mê và chuyên môn đằng sau Trường Anh Ngữ Sam, nơi chúng tôi cam kết cung cấp giáo dục tiếng Anh xuất sắc và tạo ra một môi trường học tập hỗ trợ cho học sinh trên toàn cầu</p>
+</div>
+<div class="mt-10 lg:w-3/4 flex flex-col sm:flex-row mx-auto gap-10 lg:gap-20">
+<div class="mt-10 text-base">
+<p class="font-semibold text-base">Sam Mittal - Người Sáng Lập & Giảng Viên tại Trường Anh Ngữ Sam</p>
+<br>
+<p class=text-sm>Tôi là Sam Mital, và tôi đam mê giáo dục và học ngôn ngữ. Với hơn 10 năm kinh nghiệm giảng dạy, tôi đã có cơ hội làm việc tại 15 quốc gia khác nhau và giảng dạy tại nhiều trường đại học. Là một cựu giám khảo IELTS, tôi đã chứng kiến tận mắt sức mạnh biến đổi của giáo dục ngôn ngữ.
+<br><br>
+Tôi thành lập Trường Anh Ngữ Sam để tạo ra tác động tích cực trong cuộc sống của mọi người thông qua việc học ngôn ngữ. Sứ mệnh của chúng tôi là mở ra những khả năng mới cho sự phát triển cá nhân và nghề nghiệp bằng cách thành thạo tiếng Anh. Chúng tôi tin rằng học một ngôn ngữ mới có thể mở ra cánh cửa đến một thế giới của những cơ hội và làm phong phú cuộc sống một cách ý nghĩa.
+<br><br>
+Tại Trường Anh Ngữ Sam, chúng tôi cam kết tạo nên sự khác biệt. Chúng tôi mời bạn tham gia vào cộng đồng của chúng tôi và bắt đầu hành trình thay đổi và phát triển tích cực. Cùng nhau, chúng ta có thể tạo ra tác động đáng kể đến cuộc sống và sự nghiệp của bạn.
+<br><br>
+Hãy tham gia với chúng tôi và trải nghiệm sự biến đổi tích cực mà việc học ngôn ngữ có thể mang lại.
+</p>
+<br>
+</div>
+<div class=mx-auto>
+<div class="founder-img relative w-72">
+<img src=/images/SamNoBackground.png alt class="h-96 mx-auto">
+</div>
+<p class="text-lg font-medium mt-2">Sam Mittal</p>
+<p class=text-base>Người Sáng Lập</p>
+</div>
+</div>
+</div>
+<div class="px-10 md:px-20 pb-44">
+<div class="text-center w-full lg:w-1/2 mx-auto">
+<p class="text-3xl font-semibold">Các Bài Viết <span class=text-MyDarkYellow>Mới Nhất</span></p>
+<p class="text-base mt-2">Khám phá bộ sưu tập các bài viết của chúng tôi, cung cấp lời khuyên chuyên gia, mẹo học ngôn ngữ và những câu chuyện động lực để nâng cao hành trình học tiếng Anh của bạn</p>
+</div>
+<div class="grid col-span-1 lg:grid-cols-2 gap-12 mt-8">
+<div class>
+<div class=relative>
+<img src=/images/article1.jpg class=rounded-2xl>
+<img src=/images/Dan_tri_logo.png alt class="absolute bottom-5 right-5 h-10">
+</div>
+<div class="bg-MyYellow py-1 px-5 rounded-full w-fit my-4 text-base">
+<p>Mới nhất</p>
+</div>
+<p class="text-lg font-semibold">Thầy giáo người Anh dạy học cho trẻ em vùng cao, yêu Việt Nam vì sự đôn hậu</p>
+<p class="text-base mt-2">Các lớp học của Sam Mittal thường có khoảng 20 đến 30 người, trong đó trải dài từ 5 đến 35 tuổi. Chính sự đa dạng độ tuổi khiến cho các tiết học luôn sôi động, hấp dẫn. Ngoài ra, Sam cũng tập trung...</p>
+<a target=_blank href="https://dantri.com.vn/doi-song/thay-giao-nguoi-anh-day-hoc-cho-tre-em-vung-cao-yeu-viet-nam-vi-su-don-hau-20231126153303264.htm?fbclid=IwAR0DMKA0UCLXEg0e2IQQ3ElKL3RG4ju70HsKQvlfNiOxbtHwiuOfVwE341Q_aem_AV9LRDSCuW_jyvFR_nceII-nRkIeEQFHBEn7C4fW-PLtA7elfo8OHaLjiMv9LFxFP2c" class="underline hover:text-MyBlue mt-2">Đọc thêm</a>
+</div>
+<div class>
+<div class="grid grid-cols-3 gap-4">
+<div class="w-full h-40 relative col-span-1">
+<img src=/images/article2.jpg alt class="h-40 w-full object-cover rounded-xl">
+<div class="bg-MyYellow py-1 px-5 rounded-full w-fit absolute bottom-3 right-3">
+<p>Mới nhất</p>
+</div>
+</div>
+<div class=col-span-2>
+<p class="text-lg font-medium">Dân 'du mục số' đổ xô đến Việt Nam</p>
+<p class="mt-1 mb-2">Như với Sam, chất lượng sống tốt, cuộc sống an toàn, đồ ăn ngon và cảnh đẹp là những lý do anh chọn đến Việt Nam vừa làm việc vừa trải nghiệm những chuyến đi...</p>
+<a target=_blank href=https://vnexpress.net/dan-du-muc-so-do-xo-den-viet-nam-4672277.html class=underline>Đọc thêm</a>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-4 mt-5">
+<div class="w-full h-40 relative col-span-1">
+<img src=/images/article3.jpg alt class="h-40 w-full object-cover rounded-xl">
+<div class="bg-MyYellow py-1 px-5 rounded-full w-fit absolute bottom-3 right-3">
+<p>Mới nhất</p>
+</div>
+</div>
+<div class=col-span-2>
+<p class="text-lg font-medium">Những “ông Tây” chọn TPHCM làm quê hương</p>
+<p class="mt-1 mb-2">Sau 7 năm sống ở TPHCM, ông Jefferson nói, điều ông thích nhất ở đây là khí hậu phân rõ ngày đêm. Ở đây, ánh nắng chan hòa cả ngày. Với những người...</p>
+<a target=_blank href=https://www.phunuonline.com.vn/nhung-ong-tay-chon-tphcm-lam-que-huong-a1509509.html class=underline>Đọc thêm</a>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-4 mt-5">
+<div class="w-full h-40 relative col-span-1">
+<img src=/images/article4.jpg alt class="h-40 w-full object-cover rounded-xl">
+<div class="bg-MyYellow py-1 px-5 rounded-full w-fit absolute bottom-3 right-3">
+<p>Mới nhất</p>
+</div>
+</div>
+<div class=col-span-2>
+<p class="text-lg font-medium">Bi hài khách Tây học cách "sinh tồn" trong nắng nóng đổ lửa của TPHCM</p>
+<p class="mt-1 mb-2">Ở trường học, mọi người nghỉ trưa từ 11h30 đến 13h30 và tìm mọi cách để làm mát mình. Đầu tiên, Zach tìm đến quán cà phê hoặc...</p>
+<a target=_blank href="https://afamily.vn/bi-hai-khach-tay-hoc-cach-sinh-ton-trong-nang-nong-do-lua-cua-tphcm-tap-ngu-trua-uong-nuoc-mia-20240428133802872.chn?zarsrc=30&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo" class=underline>Đọc thêm</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="bg-MyBlue px-10 md:px-20 pt-20 pb-5 text-white">
+<div class="flex justify-between flex-wrap gap-5 xl:gap-14">
+<div class>
+<img src=/images/logo.png alt class=h-20>
+<div class="flex gap-6 w-fit mx-auto mt-7">
+<a href=https://www.facebook.com/samsenglishschool1111 target=_blank class="text-lg transition-transform duration-300 ease-in-out transform hover:scale-150"><i class="fa-brands fa-facebook-f"></i></a>
+<a href=https://www.instagram.com/samsenglishschool target=_blank class="text-lg transition-transform duration-300 ease-in-out transform hover:scale-150"><i class="fa-brands fa-instagram"></i></a>
+<a href=https://www.tiktok.com/@samsenglishschool target=_blank class="text-lg transition-transform duration-300 ease-in-out transform hover:scale-150"><i class="fa-brands fa-tiktok"></i></a>
+<a href=https://www.youtube.com/@samsenglishschool6156 target=_blank class="text-lg htransition-transform duration-300 ease-in-out transform hover:scale-150"><i class="fa-brands fa-youtube"></i></a>
+<a href=https://wa.me/+84777364272 target=_blank class="text-lg transition-transform duration-300 ease-in-out transform hover:scale-150"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+</div>
+<div class="flex flex-col gap-7 text-base">
+<p class="text-MyYellow text-lg font-medium">Liên Kết Nhanh</p>
+<div class="flex flex-col text-center gap-6">
+<a href=/index.html class="hover:text-MyYellow hover:underline">Trang Chủ</a>
+<a href=/courses.html class="hover:text-MyYellow hover:underline">Khóa Học</a>
+<a href=/about.html class="hover:text-MyYellow hover:underline">Về Chúng Tôi</a>
+<a href=/contact.html class="hover:text-MyYellow hover:underline">Liên Hệ</a>
+</div>
+</div>
+<div class="flex flex-col gap-7 text-base">
+<p class="text-MyYellow text-lg font-medium">Các Chương Trình</p>
+<div class="flex flex-col text-center gap-6">
+<a href=/courses.html class="hover:text-MyYellow hover:underline">IELTS</a>
+<a href=/courses.html class="hover:text-MyYellow hover:underline">Cambridge</a>
+<a href=/courses.html class="hover:text-MyYellow hover:underline">Kinh Doanh</a>
+<a href=/courses.html class="hover:text-MyYellow hover:underline">Xem Thêm</a>
+</div>
+</div>
+<div class="flex flex-col gap-7 text-base w-full lg:w-2/5">
+<p class="text-MyYellow text-lg font-medium">Về Trường Anh Ngữ Sam</p>
+<p class=text-sm>Tại Trường Anh Ngữ Sam, chúng tôi cam kết tạo ra sự khác biệt. Chúng tôi mời bạn tham gia vào cộng đồng của chúng tôi và bắt đầu một hành trình thay đổi tích cực và phát triển. Cùng nhau, chúng ta có thể tạo ra sự ảnh hưởng đáng kể đến cuộc sống và sự nghiệp của bạn.
+</p>
+</div>
+</div>
+<div class="h-0.5 w-full bg-gray-400 mt-10 mb-5"></div>
+<p class="text-center italic text-xs">© 2019 Trường Anh Ngữ Sam, Đã Đăng Ký Bản Quyền</p>
+</footer>
+</body>
+<script src=/main.js></script>
+</html>
