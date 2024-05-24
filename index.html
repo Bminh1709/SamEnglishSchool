@@ -26,7 +26,7 @@ Your browser does not support the audio element.
 </div>
 </a>
 <div class="fixed w-full top-0 z-10">
-<nav class="bg-MyBlue py-3 px-10 md:px-20 flex justify-between items-center">
+<nav class="bg-MyBlue py-3 px-5 md:px-20 flex justify-between items-center">
 <a href=/index.html>
 <img src=/images/logo2.png alt="SAM'S English School Logo" class=h-11>
 </a>
@@ -50,20 +50,21 @@ Your browser does not support the audio element.
 <input hidden type=checkbox id=mobile-navbar class=checkbox-navbar>
 <label class="block lg:hidden" for=mobile-navbar><i class="fa-solid fa-bars text-2xl text-white"></i></label>
 <label for=mobile-navbar class=nav__overlay></label>
-<div class="responsive-navbar fixed top-0 flex flex-col gap-8 px-8 py-12 bg-white w-1/2 h-full left-0 text-xl text-center">
+<div class="responsive-navbar fixed top-0 flex flex-col gap-8 px-8 py-12 bg-white w-4/5 h-full left-0 text-xl text-center">
 <img src=/images/roundedsam.png alt="SAM'S English School Logo" class="h-20 object-contain">
 <a href=/index.html class=hover:text-MyYellow>Home</a>
 <a href=/courses.html class=hover:text-MyYellow>Courses</a>
 <a href=/teachers.html class=hover:text-MyYellow>Teachers</a>
 <a href=/career.html class=hover:text-MyYellow>Career</a>
 <a href=/about.html class=hover:text-MyYellow>About Us</a>
+<a href=/contact.html class=hover:text-MyYellow>Contact</a>
 <a href=index.html class=hover:text-MyYellow>English</a>
 <a href=/vn/index.html class=hover:text-MyYellow>Viet Nam</a>
 </div>
 </nav>
-<div class="w-full z-10 p-3 flex justify-center text-lg font-medium text-white" style="background:linear-gradient(138deg,#20c9ff 36.7%,#0008bb 84.4%,#ffffff 119.7%)">Scan the Zalo QR code and schedule your "FREE DEMO CLASS" <button id=show_popup class="ml-2 hover:underline font-bold text-xl">Scan Now</button></div>
+<div class="w-full z-10 p-3 flex justify-center text-sm sm:text-lg font-medium text-white flex-wrap text-center" style="background:linear-gradient(138deg,#20c9ff 36.7%,#0008bb 84.4%,#ffffff 119.7%)">Scan the Zalo QR code and schedule your "FREE DEMO CLASS" <button id=show_popup class="ml-2 hover:underline font-bold text-sm sm:text-xl">Scan Now</button></div>
 </div>
-<div id=popup class="hidden fixed top-0 bottom-0 left-0 right-0 bg-black bg-opacity-50 z-20">
+<div id=popup class="overflow-y-scroll pb-12 hidden fixed top-0 bottom-0 left-0 right-0 bg-black bg-opacity-50 z-20">
 <div class="bg-white mx-auto w-4/5 md:w-3/5 lg:w-5/6 xl:w-4/6 h-fit rounded-lg mt-28">
 <div class="border-b border-gray-300 px-5 py-3 flex justify-between items-center">
 <p class="text-xl font-semibold text-MyBlue">Sam's English School</p>
@@ -80,12 +81,12 @@ Your browser does not support the audio element.
 </div>
 </div>
 </div>
-<div class="px-10 md:px-20 h-screen banner">
-<div class="text-white flex flex-col justify-center h-full w-full sm:w-2/3 lg:w-1/2 gap-6">
-<p class="text-3xl sm:text-6xl font-semibold">Your
+<div class="px-5 md:px-20 h-screen banner">
+<div class="text-white flex flex-col justify-center mt-20 min-[274px]:mt-0 h-full w-full sm:w-2/3 lg:w-1/2 gap-6">
+<p class="text-3xl sm:text-6xl font-semibold mt-28">Your
 <span class=text-MyYellow> English journey</span> starts here!</p>
 <p>At Sam's English School, we believe in a personalized approach to learning. Understanding that each student has unique needs and goals, our curriculum and teaching methodologies are carefully crafted to cater to individual preferences and learning styles</p>
-<div class="flex gap-3">
+<div class="flex gap-3 flex-wrap">
 <a href=#Courses class="flex items-center gap-2 border border-white rounded-full py-3 px-4 hover:bg-MyBlue hover:border-MyBlue">
 <p>Our Courses</p>
 <i class="fa-solid fa-arrow-right"></i>
@@ -97,8 +98,8 @@ Your browser does not support the audio element.
 </div>
 </div>
 </div>
-<div class="w-full bg-MyYellow py-3 flex justify-center text-lg font-medium">With 120 classes per year, one always fits your schedule</div>
-<div class="px-10 md:px-20 py-28">
+<div class="w-full bg-MyYellow py-3 flex justify-center text-sm sm:text-lg p-3 text-center font-medium">We are a community of changemakers. We educate, we empower, and we inspire!</div>
+<div class="px-5 md:px-20 py-28">
 <div class="w-full lg:w-1/2 text-center mx-auto">
 <p class="text-3xl font-semibold mb-3">Why Choose <span class=text-MyOrange>Sam's English School</span></p>
 <p class="text-base leading-7">
@@ -133,16 +134,16 @@ Comprehensive Expert Instruction
 </div>
 </div>
 </div>
-<div class="feedback_container flex flex-col gap-12 items-center relative text-center bg-MyBlue py-20 text-white mt-5 mb-32">
-<div class="next-feedback absolute top-1/2 w-fit left-5 sm:left-10 lg:left-20 text-5xl hover:cursor-pointer hover:text-MyYellow"><i class="fa-solid fa-angle-left"></i></div>
-<div class="prev-feedback absolute top-1/2 w-fit right-5 sm:right-10 lg:right-20 text-5xl hover:cursor-pointer hover:text-MyYellow"><i class="fa-solid fa-angle-right"></i></div>
-<p class="text-3xl font-bold">Student Feedback for <span class=text-MyYellow>Sam's English School</span></p>
-<div class="hidden flex-col gap-8 w-3/5 feedback active text-base">
+<div class="feedback_container flex flex-col gap-12 items-center relative text-center bg-MyBlue pt-20 pb-28 sm:py-20 text-white mt-5 mb-32">
+<div class="next-feedback absolute bottom-5 sm:top-1/2 w-fit left-10 sm:left-10 lg:left-20 text-5xl hover:cursor-pointer hover:text-MyYellow"><i class="fa-solid fa-angle-left"></i></div>
+<div class="prev-feedback absolute bottom-5 sm:top-1/2 w-fit right-10 sm:right-10 lg:right-20 text-5xl hover:cursor-pointer hover:text-MyYellow"><i class="fa-solid fa-angle-right"></i></div>
+<p class="text-3xl font-bold px-5">Student Feedback for <span class=text-MyYellow>Sam's English School</span></p>
+<div class="hidden flex-col gap-8 px-5 sm:w-4/6 feedback active text-base">
 <p class>I enrolled in the online IELTS course at Sam's English School and was very impressed with the quality of teaching. The teachers were very knowledgeable and provided personalized feedback that helped me improve my weak areas. Thanks to Sam's English School, I achieved a band score of 8.0!</p>
 <div class="flex flex-col md:flex-row gap-10 md:gap-5 justify-between items-center">
-<div class="flex gap-5 items-center">
+<div class="flex gap-5 items-center flex-wrap justify-center">
 <img class="rounded-full h-20 w-20 object-cover" src=/images/student1.png alt>
-<div class=text-left>
+<div class="text-center sm:text-left">
 <p class=font-semibold>Tran Thi Thu Ha</p>
 <p class=font-light>IELTS PREPARATION</p>
 </div>
@@ -156,12 +157,12 @@ Comprehensive Expert Instruction
 </div>
 </div>
 </div>
-<div class="hidden flex-col gap-8 w-3/5 feedback text-base">
+<div class="hidden flex-col gap-8 px-5 sm:w-4/6 feedback text-base">
 <p class>The one-on-one communication skills course at Sam's English School was exactly what I needed to boost my confidence. The personalized attention from my tutor allowed me to progress at my own pace and I feel much more confident in my communication abilities now. </p>
 <div class="flex flex-col md:flex-row gap-10 md:gap-5 justify-between items-center">
-<div class="flex gap-5 items-center">
+<div class="flex gap-5 items-center flex-wrap justify-center">
 <img class="rounded-full h-20 w-20 object-cover" src=/images/student2.jpg alt>
-<div class=text-left>
+<div class="text-center sm:text-left">
 <p class=font-semibold>Bui Quang Minh</p>
 <p class=font-light>Cambridge Curriculum</p>
 </div>
@@ -175,12 +176,12 @@ Comprehensive Expert Instruction
 </div>
 </div>
 </div>
-<div class="hidden flex-col gap-8 w-3/5 feedback text-base">
+<div class="hidden flex-col gap-8 px-5 sm:w-4/6 feedback text-base">
 <p class>Taking classes at Sam's English School was super fun! Even though I'm just 10 years old, the teachers made learning English really exciting. The online classes had cool games and activities that helped me remember new words and phrases. My teacher was really nice and always encouraged me to speak up.</p>
 <div class="flex flex-col md:flex-row gap-10 md:gap-5 justify-between items-center">
-<div class="flex gap-5 items-center">
+<div class="flex gap-5 items-center flex-wrap justify-center">
 <img class="rounded-full h-20 w-20 object-cover" src=images/student3.jpg alt>
-<div class=text-left>
+<div class="text-center sm:text-left">
 <p class=font-semibold>Thanh Vinh</p>
 <p class=font-light>Kids' English Course (Online)</p>
 </div>
@@ -195,7 +196,7 @@ Comprehensive Expert Instruction
 </div>
 </div>
 </div>
-<div class="px-14 md:px-20 pt-12 pb-20 flex flex-col lg:flex-row justify-between items-center gap-14 xl:gap-32">
+<div class="px-8 md:px-20 pt-12 pb-20 flex flex-col lg:flex-row justify-between items-center gap-14 xl:gap-32">
 <div class="relative circle-behind-title">
 <p class="text-2xl mb-2 font-semibold text-MyBlue">
 Sam's English School: Your Pathway to Mastering English with Expert Guidance and Support</p>
@@ -209,7 +210,7 @@ Sam's English School: Your Pathway to Mastering English with Expert Guidance and
 </div>
 </div>
 <div id=Programs class=pb-20></div>
-<div class="bg-MyBlue px-14 md:px-24 py-14">
+<div class="bg-MyBlue px-10 md:px-24 py-14">
 <div class="flex flex-col items-center gap-4 w-full lg:w-1/2 mx-auto text-center">
 <p class="text-MyDarkYellow text-base font-medium">SPECIALIZED PROGRAMS</p>
 <p class="text-white text-4xl font-medium">Our Best Programs Offered and Teach By Best of The Instructors</p>
@@ -265,7 +266,7 @@ Sam's English School: Your Pathway to Mastering English with Expert Guidance and
 <a href=/courses.html class=contact_btn>View Courses</a>
 </div>
 </div>
-<div class="px-10 md:px-20 py-28">
+<div class="px-5 md:px-20 py-28">
 <div class="w-full lg:w-1/2 text-center mx-auto">
 <p class="text-3xl font-semibold mb-3 text-MyBlue">Our <span class=text-MyDarkYellow>Past Work</span></p>
 <p class="text-base leading-7">
@@ -287,8 +288,8 @@ Check out the success stories of our students<br> who have excelled in English w
 <button id=shuffleButton class="px-4 py-2 mt-5 border border-MyBlue rounded-full hover:bg-MyBlue hover:text-white">More Images</button>
 </div>
 </div>
-<footer class="bg-MyBlue px-10 md:px-20 pt-20 pb-5 text-white">
-<div class="flex justify-between flex-wrap gap-5 xl:gap-14">
+<footer class="bg-MyBlue px-5 md:px-20 pt-20 pb-5 text-white">
+<div class="flex justify-center min-[285px]:justify-between flex-wrap gap-5 xl:gap-14">
 <div class>
 <img src=/images/logo.png alt class=h-20>
 <div class="flex gap-6 w-fit mx-auto mt-7">

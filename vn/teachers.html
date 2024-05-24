@@ -11,8 +11,7 @@
 <link rel=stylesheet href=/stylesheet/shakeBtn.css>
 <link rel=preconnect href=https://fonts.googleapis.com>
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300;500;600;700&display=swap" rel=stylesheet>
-<style>body{font-family:"Encode Sans Expanded",sans-serif}</style>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap" rel=stylesheet><style>body{font-family:"Encode Sans Expanded",sans-serif}</style>
 </head>
 <body class=relative>
 <button onclick=backToTopFunction() title="Go to top" id=backToTop-btn class="hidden fixed z-10 bottom-6 right-6 text-xl bg-MyBlue rounded-lg text-white px-3 py-2 border border-white"><i class="fa-solid fa-circle-arrow-up"></i></button>
@@ -22,7 +21,7 @@
 </div>
 </a>
 <div class="fixed w-full top-0 z-10">
-<nav class="bg-MyBlue py-3 px-10 md:px-20 flex justify-between items-center">
+<nav class="bg-MyBlue py-3 px-5 md:px-20 flex justify-between items-center">
 <a href=/index.html>
 <img src=/images/logo2.png alt="Logo Trường Anh Ngữ Sam" class=h-11>
 </a>
@@ -46,20 +45,21 @@
 <input hidden type=checkbox id=mobile-navbar class=checkbox-navbar>
 <label class="block lg:hidden" for=mobile-navbar><i class="fa-solid fa-bars text-2xl text-white"></i></label>
 <label for=mobile-navbar class=nav__overlay></label>
-<div class="responsive-navbar fixed top-0 flex flex-col gap-8 px-8 py-12 bg-white w-1/2 h-full left-0 text-xl text-center">
+<div class="responsive-navbar fixed top-0 flex flex-col gap-8 px-8 py-12 bg-white w-4/5 h-full left-0 text-xl text-center">
 <img src=/images/roundedsam.png alt="Logo Trường Anh Ngữ Sam" class="h-20 object-contain">
 <a href=/vn/index.html class=hover:text-MyYellow>Trang Chủ</a>
 <a href=/vn/courses.html class=hover:text-MyYellow>Khóa Học</a>
 <a href=/vn/teachers.html class=hover:text-MyYellow>Giáo Viên</a>
 <a href=/vn/career.html class=hover:text-MyYellow>Tuyển Dụng</a>
 <a href=/vn/about.html class=hover:text-MyYellow>Về Chúng Tôi</a>
+<a href=/vn/contact.html class=hover:text-MyYellow>Liên Lạc</a>
 <a href=index.html class=hover:text-MyYellow>English</a>
 <a href=/vn/index.html class=hover:text-MyYellow>Viet Nam</a>
 </div>
 </nav>
-<div class="w-full z-10 p-3 flex justify-center text-lg font-medium text-white" style="background:linear-gradient(138deg,#20c9ff 36.7%,#0008bb 84.4%,#ffffff 119.7%)">Quét mã QR Zalo và đăng ký "LỚP HỌC THỬ MIỄN PHÍ" <button id=show_popup class="ml-2 hover:underline font-bold text-xl">Quét Ngay</button></div>
+<div class="w-full z-10 p-3 flex justify-center text-sm sm:text-lg font-medium text-white flex-wrap text-center" style="background:linear-gradient(138deg,#20c9ff 36.7%,#0008bb 84.4%,#ffffff 119.7%)">Quét mã QR Zalo và đăng ký "LỚP HỌC THỬ MIỄN PHÍ" <button id=show_popup class="ml-2 hover:underline font-bold text-xl">Quét Ngay</button></div>
 </div>
-<div id=popup class="hidden fixed top-0 bottom-0 left-0 right-0 bg-black bg-opacity-50 z-20">
+<div id=popup class="overflow-y-scroll pb-12 hidden fixed top-0 bottom-0 left-0 right-0 bg-black bg-opacity-50 z-20">
 <div class="bg-white mx-auto w-4/5 md:w-3/5 lg:w-5/6 xl:w-4/6 h-fit rounded-lg mt-28">
 <div class="border-b border-gray-300 px-5 py-3 flex justify-between items-center">
 <p class="text-xl font-semibold text-MyBlue">Trường Anh Ngữ Sam</p>
@@ -76,12 +76,12 @@
 </div>
 </div>
 </div>
-<div class="px-10 md:px-20 pt-36">
-<div class="text-white bg-MyBlue rounded-xl p-10 teacher-banner text-center">
+<div class="px-5 md:px-20 pt-48 sm:pt-36">
+<div class="text-white bg-MyBlue rounded-xl p-5 sm:p-10 teacher-banner text-center">
 <p class="text-MyDarkYellow text-base font-semibold">Tham Gia Đội Ngũ Của Chúng Tôi</p>
 <p class="text-3xl font-semibold mt-3">Cơ Hội Nghề Nghiệp Tại Trường Anh Ngữ Sam</p>
-<p class="w-1/2 mx-auto my-5">Trở thành một phần của Trường Anh Ngữ Sam và đóng góp vào việc định hình tương lai của giáo dục ngôn ngữ. Chúng tôi đang tìm kiếm những giáo viên nhiệt huyết để mang đến trải nghiệm học tiếng Anh tuyệt vời. Tham gia cùng chúng tôi trong sứ mệnh truyền cảm hứng và trao quyền cho học sinh trên toàn thế giới</p>
-<div class="flex justify-center gap-3">
+<p class="w-full sm:w-1/2 mx-auto my-5">Trở thành một phần của Trường Anh Ngữ Sam và đóng góp vào việc định hình tương lai của giáo dục ngôn ngữ. Chúng tôi đang tìm kiếm những giáo viên nhiệt huyết để mang đến trải nghiệm học tiếng Anh tuyệt vời. Tham gia cùng chúng tôi trong sứ mệnh truyền cảm hứng và trao quyền cho học sinh trên toàn thế giới</p>
+<div class="flex justify-center gap-3 flex-wrap">
 <a href=/vn/career.html class="flex items-center gap-2 bg-MyDarkYellow rounded-full py-3 px-4 border border-MyDarkYellow hover:bg-transparent hover:border-white">
 <p>Mô Tả Công Việc</p>
 <i class="fa-solid fa-arrow-right"></i>
@@ -93,7 +93,7 @@
 </div>
 </div>
 </div>
-<div class="px-10 md:px-20 pt-16 mb-36">
+<div class="px-5 md:px-20 pt-16 mb-36">
 <p class="text-2xl font-semibold text-MyBlue text-center">Đội ngũ giáo viên</p>
 <div class="flex justify-center gap-8 flex-wrap mt-14">
 <div class="flex flex-col items-center">
@@ -231,8 +231,8 @@
 </div>
 </div>
 </div>
-<footer class="bg-MyBlue px-10 md:px-20 pt-20 pb-5 text-white">
-<div class="flex justify-between flex-wrap gap-5 xl:gap-14">
+<footer class="bg-MyBlue px-5 md:px-20 pt-20 pb-5 text-white">
+<div class="flex justify-center min-[285px]:justify-between flex-wrap gap-5 xl:gap-14">
 <div class>
 <img src=/images/logo.png alt class=h-20>
 <div class="flex gap-6 w-fit mx-auto mt-7">

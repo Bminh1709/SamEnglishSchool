@@ -11,7 +11,7 @@
 <link rel=stylesheet href=/stylesheet/shakeBtn.css>
 <link rel=preconnect href=https://fonts.googleapis.com>
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300;500;600;700&display=swap" rel=stylesheet><style>body{font-family:"Encode Sans Expanded",sans-serif}</style>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap" rel=stylesheet><style>body{font-family:"Encode Sans Expanded",sans-serif}</style>
 </head>
 <body class=relative>
 <button onclick=backToTopFunction() title="Go to top" id=backToTop-btn class="hidden fixed z-10 bottom-6 right-6 text-xl bg-MyBlue rounded-lg text-white px-3 py-2 border border-white"><i class="fa-solid fa-circle-arrow-up"></i></button>
@@ -21,7 +21,7 @@
 </div>
 </a>
 <div class="fixed w-full top-0 z-10">
-<nav class="bg-MyBlue py-3 px-10 md:px-20 flex justify-between items-center">
+<nav class="bg-MyBlue py-3 px-5 md:px-20 flex justify-between items-center">
 <a href=/index.html>
 <img src=/images/logo2.png alt="Logo Trường Anh Ngữ Sam" class=h-11>
 </a>
@@ -45,20 +45,21 @@
 <input hidden type=checkbox id=mobile-navbar class=checkbox-navbar>
 <label class="block lg:hidden" for=mobile-navbar><i class="fa-solid fa-bars text-2xl text-white"></i></label>
 <label for=mobile-navbar class=nav__overlay></label>
-<div class="responsive-navbar fixed top-0 flex flex-col gap-8 px-8 py-12 bg-white w-1/2 h-full left-0 text-xl text-center">
+<div class="responsive-navbar fixed top-0 flex flex-col gap-8 px-8 py-12 bg-white w-4/5 h-full left-0 text-xl text-center">
 <img src=/images/roundedsam.png alt="Logo Trường Anh Ngữ Sam" class="h-20 object-contain">
 <a href=/vn/index.html class=hover:text-MyYellow>Trang Chủ</a>
 <a href=/vn/courses.html class=hover:text-MyYellow>Khóa Học</a>
 <a href=/vn/teachers.html class=hover:text-MyYellow>Giáo Viên</a>
 <a href=/vn/career.html class=hover:text-MyYellow>Tuyển Dụng</a>
 <a href=/vn/about.html class=hover:text-MyYellow>Về Chúng Tôi</a>
+<a href=/vn/contact.html class=hover:text-MyYellow>Liên Lạc</a>
 <a href=index.html class=hover:text-MyYellow>English</a>
 <a href=/vn/index.html class=hover:text-MyYellow>Viet Nam</a>
 </div>
 </nav>
-<div class="w-full z-10 p-3 flex justify-center text-lg font-medium text-white" style="background:linear-gradient(138deg,#20c9ff 36.7%,#0008bb 84.4%,#ffffff 119.7%)">Quét mã QR Zalo và đăng ký "LỚP HỌC THỬ MIỄN PHÍ" <button id=show_popup class="ml-2 hover:underline font-bold text-xl">Quét Ngay</button></div>
+<div class="w-full z-10 p-3 flex justify-center text-sm sm:text-lg font-medium text-white flex-wrap text-center" style="background:linear-gradient(138deg,#20c9ff 36.7%,#0008bb 84.4%,#ffffff 119.7%)">Quét mã QR Zalo và đăng ký "LỚP HỌC THỬ MIỄN PHÍ" <button id=show_popup class="ml-2 hover:underline font-bold text-xl">Quét Ngay</button></div>
 </div>
-<div id=popup class="hidden fixed top-0 bottom-0 left-0 right-0 bg-black bg-opacity-50 z-20">
+<div id=popup class="overflow-y-scroll pb-12 hidden fixed top-0 bottom-0 left-0 right-0 bg-black bg-opacity-50 z-20">
 <div class="bg-white mx-auto w-4/5 md:w-3/5 lg:w-5/6 xl:w-4/6 h-fit rounded-lg mt-28">
 <div class="border-b border-gray-300 px-5 py-3 flex justify-between items-center">
 <p class="text-xl font-semibold text-MyBlue">Trường Anh Ngữ Sam</p>
@@ -75,17 +76,17 @@
 </div>
 </div>
 </div>
-<div class="px-10 md:px-20 my-40">
+<div class="px-5 md:px-20 my-40">
 <div class="text-center flex flex-col gap-3">
-<p class="text-MyDarkYellow text-base font-semibold">VỀ CHÚNG TÔI</p>
-<p class="text-4xl font-medium mx-auto">Chúng tôi là cộng đồng của những người tạo nên sự thay đổi:<br> chúng tôi giáo dục, truyền cảm hứng</p>
+<p class="text-MyDarkYellow text-base font-semibold mt-5">VỀ CHÚNG TÔI</p>
+<p class="text-3xl sm:text-4xl font-medium mx-auto"><span class=text-MyDarkYellow>Chúng tôi là những người tạo nên sự thay đổi </span><br>chúng tôi giáo dục, truyền cảm hứng</p>
 <p class="lg:w-2/3 mx-auto text-base">Khám phá niềm đam mê và chuyên môn đằng sau Trường Anh Ngữ Sam, nơi chúng tôi cam kết cung cấp giáo dục tiếng Anh xuất sắc và tạo ra một môi trường học tập hỗ trợ cho học sinh trên toàn cầu</p>
 </div>
 <div class="mt-10 lg:w-3/4 flex flex-col sm:flex-row mx-auto gap-10 lg:gap-20">
 <div class="mt-10 text-base">
-<p class="font-semibold text-base">Sam Mittal - Người Sáng Lập & Giảng Viên tại Trường Anh Ngữ Sam</p>
+<p class="font-semibold text-xl">Sam Mittal - Người Sáng Lập & Giảng Viên tại Trường Anh Ngữ Sam</p>
 <br>
-<p class=text-sm>Tôi là Sam Mital, và tôi đam mê giáo dục và học ngôn ngữ. Với hơn 10 năm kinh nghiệm giảng dạy, tôi đã có cơ hội làm việc tại 15 quốc gia khác nhau và giảng dạy tại nhiều trường đại học. Là một cựu giám khảo IELTS, tôi đã chứng kiến tận mắt sức mạnh biến đổi của giáo dục ngôn ngữ.
+<p class=text-base>Tôi là Sam Mital, và tôi đam mê giáo dục và học ngôn ngữ. Với hơn 10 năm kinh nghiệm giảng dạy, tôi đã có cơ hội làm việc tại 15 quốc gia khác nhau và giảng dạy tại nhiều trường đại học. Là một cựu giám khảo IELTS, tôi đã chứng kiến tận mắt sức mạnh biến đổi của giáo dục ngôn ngữ.
 <br><br>
 Tôi thành lập Trường Anh Ngữ Sam để tạo ra tác động tích cực trong cuộc sống của mọi người thông qua việc học ngôn ngữ. Sứ mệnh của chúng tôi là mở ra những khả năng mới cho sự phát triển cá nhân và nghề nghiệp bằng cách thành thạo tiếng Anh. Chúng tôi tin rằng học một ngôn ngữ mới có thể mở ra cánh cửa đến một thế giới của những cơ hội và làm phong phú cuộc sống một cách ý nghĩa.
 <br><br>
@@ -96,15 +97,15 @@ Hãy tham gia với chúng tôi và trải nghiệm sự biến đổi tích c�
 <br>
 </div>
 <div class=mx-auto>
-<div class="founder-img relative w-72">
-<img src=/images/SamNoBackground.png alt class="h-96 mx-auto">
+<div class="founder-img relative w-fit sm:w-72">
+<img src=/images/SamNoBackground.png alt class="h-96 mx-auto object-cover">
 </div>
-<p class="text-lg font-medium mt-2">Sam Mittal</p>
-<p class=text-base>Người Sáng Lập</p>
+<p class="text-center sm:text-left text-lg font-medium mt-2">Sam Mittal</p>
+<p class="text-center sm:text-left text-base">Người sáng lập và Giám đốc điều hành</p>
 </div>
 </div>
 </div>
-<div class="px-10 md:px-20 pb-44">
+<div class="px-5 md:px-20 pb-44">
 <div class="text-center w-full lg:w-1/2 mx-auto">
 <p class="text-3xl font-semibold">Các Bài Viết <span class=text-MyDarkYellow>Mới Nhất</span></p>
 <p class="text-base mt-2">Khám phá bộ sưu tập các bài viết của chúng tôi, cung cấp lời khuyên chuyên gia, mẹo học ngôn ngữ và những câu chuyện động lực để nâng cao hành trình học tiếng Anh của bạn</p>
@@ -113,7 +114,7 @@ Hãy tham gia với chúng tôi và trải nghiệm sự biến đổi tích c�
 <div class>
 <div class=relative>
 <img src=/images/article1.jpg class=rounded-2xl>
-<img src=/images/Dan_tri_logo.png alt class="absolute bottom-5 right-5 h-10">
+<img src=/images/Dan_tri_logo.png alt class="absolute bottom-5 right-5 h-5 sm:h-10">
 </div>
 <div class="bg-MyYellow py-1 px-5 rounded-full w-fit my-4 text-base">
 <p>Mới nhất</p>
@@ -126,7 +127,7 @@ Hãy tham gia với chúng tôi và trải nghiệm sự biến đổi tích c�
 <div class="grid grid-cols-3 gap-4">
 <div class="w-full h-40 relative col-span-1">
 <img src=/images/article2.jpg alt class="h-40 w-full object-cover rounded-xl">
-<div class="bg-MyYellow py-1 px-5 rounded-full w-fit absolute bottom-3 right-3">
+<div class="bg-MyYellow py-1 px-5 rounded-full w-fit absolute bottom-3 right-3 hidden sm:block">
 <p>Mới nhất</p>
 </div>
 </div>
@@ -139,7 +140,7 @@ Hãy tham gia với chúng tôi và trải nghiệm sự biến đổi tích c�
 <div class="grid grid-cols-3 gap-4 mt-5">
 <div class="w-full h-40 relative col-span-1">
 <img src=/images/article3.jpg alt class="h-40 w-full object-cover rounded-xl">
-<div class="bg-MyYellow py-1 px-5 rounded-full w-fit absolute bottom-3 right-3">
+<div class="bg-MyYellow py-1 px-5 rounded-full w-fit absolute bottom-3 right-3 hidden sm:block">
 <p>Mới nhất</p>
 </div>
 </div>
@@ -152,7 +153,7 @@ Hãy tham gia với chúng tôi và trải nghiệm sự biến đổi tích c�
 <div class="grid grid-cols-3 gap-4 mt-5">
 <div class="w-full h-40 relative col-span-1">
 <img src=/images/article4.jpg alt class="h-40 w-full object-cover rounded-xl">
-<div class="bg-MyYellow py-1 px-5 rounded-full w-fit absolute bottom-3 right-3">
+<div class="bg-MyYellow py-1 px-5 rounded-full w-fit absolute bottom-3 right-3 hidden sm:block">
 <p>Mới nhất</p>
 </div>
 </div>
@@ -165,8 +166,8 @@ Hãy tham gia với chúng tôi và trải nghiệm sự biến đổi tích c�
 </div>
 </div>
 </div>
-<footer class="bg-MyBlue px-10 md:px-20 pt-20 pb-5 text-white">
-<div class="flex justify-between flex-wrap gap-5 xl:gap-14">
+<footer class="bg-MyBlue px-5 md:px-20 pt-20 pb-5 text-white">
+<div class="flex justify-center min-[285px]:justify-between flex-wrap gap-5 xl:gap-14">
 <div class>
 <img src=/images/logo.png alt class=h-20>
 <div class="flex gap-6 w-fit mx-auto mt-7">

@@ -11,8 +11,7 @@
 <link rel=stylesheet href=/stylesheet/shakeBtn.css>
 <link rel=preconnect href=https://fonts.googleapis.com>
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300;500;600;700&display=swap" rel=stylesheet>
-<style>body{font-family:"Encode Sans Expanded",sans-serif}</style>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap" rel=stylesheet><style>body{font-family:"Encode Sans Expanded",sans-serif}</style>
 </head>
 <body class=relative>
 <button onclick=backToTopFunction() title="Go to top" id=backToTop-btn class="hidden fixed z-10 bottom-6 right-6 text-xl bg-MyBlue rounded-lg text-white px-3 py-2 border border-white"><i class="fa-solid fa-circle-arrow-up"></i></button>
@@ -22,7 +21,7 @@
 </div>
 </a>
 <div class="fixed w-full top-0 z-10">
-<nav class="bg-MyBlue py-3 px-10 md:px-20 flex justify-between items-center">
+<nav class="bg-MyBlue py-3 px-5 md:px-20 flex justify-between items-center">
 <a href=/index.html>
 <img src=/images/logo2.png alt="Logo Trường Anh Ngữ Sam" class=h-11>
 </a>
@@ -46,41 +45,24 @@
 <input hidden type=checkbox id=mobile-navbar class=checkbox-navbar>
 <label class="block lg:hidden" for=mobile-navbar><i class="fa-solid fa-bars text-2xl text-white"></i></label>
 <label for=mobile-navbar class=nav__overlay></label>
-<div class="responsive-navbar fixed top-0 flex flex-col gap-8 px-8 py-12 bg-white w-1/2 h-full left-0 text-xl text-center">
+<div class="responsive-navbar fixed top-0 flex flex-col gap-8 px-8 py-12 bg-white w-4/5 h-full left-0 text-xl text-center">
 <img src=/images/roundedsam.png alt="Logo Trường Anh Ngữ Sam" class="h-20 object-contain">
 <a href=/vn/index.html class=hover:text-MyYellow>Trang Chủ</a>
 <a href=/vn/courses.html class=hover:text-MyYellow>Khóa Học</a>
 <a href=/vn/teachers.html class=hover:text-MyYellow>Giáo Viên</a>
 <a href=/vn/career.html class=hover:text-MyYellow>Tuyển Dụng</a>
 <a href=/vn/about.html class=hover:text-MyYellow>Về Chúng Tôi</a>
+<a href=/vn/contact.html class=hover:text-MyYellow>Liên Lạc</a>
 <a href=index.html class=hover:text-MyYellow>English</a>
 <a href=/vn/index.html class=hover:text-MyYellow>Viet Nam</a>
 </div>
 </nav>
-<div class="w-full z-10 p-3 flex justify-center text-lg font-medium text-white" style="background:linear-gradient(138deg,#20c9ff 36.7%,#0008bb 84.4%,#ffffff 119.7%)">Quét mã QR Zalo và đăng ký "LỚP HỌC THỬ MIỄN PHÍ" <button id=show_popup class="ml-2 hover:underline font-bold text-xl">Quét Ngay</button></div>
 </div>
-<div id=popup class="hidden fixed top-0 bottom-0 left-0 right-0 bg-black bg-opacity-50 z-20">
-<div class="bg-white mx-auto w-4/5 md:w-3/5 lg:w-5/6 xl:w-4/6 h-fit rounded-lg mt-28">
-<div class="border-b border-gray-300 px-5 py-3 flex justify-between items-center">
-<p class="text-xl font-semibold text-MyBlue">Trường Anh Ngữ Sam</p>
-<button id=hidden_popup class="text-2xl hover:text-MyDarkYellow"><i class="fa-solid fa-xmark"></i></button>
-</div>
-<div class="flex flex-col lg:flex-row gap-10 p-5">
-<div class="flex flex-col gap-2 mt-5">
-<p class="text-center text-2xl font-medium">🌟 Khám Phá Tiềm Năng Tiếng Anh Của Bạn! 🌟</p>
-<p class="text-center text-base mt-2">Quét mã QR Zalo và đăng ký LỚP HỌC THỬ MIỄN PHÍ với giáo viên tiếng Anh bản ngữ của chúng tôi. Tham gia Trường Anh Ngữ Sam hôm nay và bắt đầu hành trình đến sự lưu loát! 🚀📚</p>
-<p class="text-center mt-2 text-base">Sẵn sàng nâng cao tiếng Anh của bạn lên một tầm cao mới? Đăng ký một trong các khóa học của chúng tôi tại Trường Anh Ngữ Sam thật dễ dàng! Chỉ cần liên hệ với chúng tôi thông qua các phương thức sau để bắt đầu quá trình đăng ký. Liên hệ với chúng tôi hôm nay để bắt đầu hành trình của bạn!</p>
-<a href=tel:+84921438861 class="mx-auto mt-3 bg-MyBlue py-2.5 px-5 rounded-sm text-white w-fit hover:bg-MyDarkYellow">Gọi ngay</a>
-</div>
-<img src=/images/QR.jpg alt class="mx-auto w-full sm:w-96 sm:h-96 border-8 border-MyBlue">
-</div>
-</div>
-</div>
-<div class="text-white bg-MyBlue about-banner text-center h-80 flex flex-col justify-center items-center">
+<div class="text-white bg-MyBlue about-banner text-center h-fit sm:h-80 mt-10 sm:mt-0 flex flex-col justify-center items-center">
 <p class="text-3xl font-semibold mt-14">Liên hệ với Trường Anh Ngữ Sam</p>
 <p class="w-3/4 lg:w-1/2 mx-auto my-5">Liên hệ với chúng tôi với bất kỳ câu hỏi, phản hồi hoặc để lên lịch thăm quan. Chúng tôi sẵn sàng giúp bạn bắt đầu hành trình học tiếng Anh. Kết nối với Trường Anh Ngữ Sam ngay hôm nay và để chúng tôi hỗ trợ bạn đạt được mục tiêu ngôn ngữ của mình!</p>
 </div>
-<div class="grid grid-cols-5 gap-10 px-10 md:w-4/5 lg:w-3/5 mx-auto my-28">
+<div class="grid grid-cols-5 gap-10 px-5 sm:px-10 md:w-4/5 lg:w-3/5 mx-auto my-28">
 <div class="col-span-5 sm:col-span-3 flex flex-col gap-2">
 <p class="text-3xl font-semibold">Giữ liên lạc</p>
 <p>Sẵn sàng nâng cao trình độ tiếng Anh của bạn? Đăng ký một trong các khóa học của chúng tôi tại Trường Anh Ngữ Sam thật dễ dàng! Chỉ cần liên hệ với chúng tôi qua các phương thức sau để bắt đầu đăng ký của bạn. Liên hệ với chúng tôi ngay hôm nay để bắt đầu hành trình của bạn!</p>
@@ -90,7 +72,7 @@
 <img src=/images/QR.jpg alt="QR Code">
 </div>
 </div>
-<div class="px-10 md:px-20 mb-32">
+<div class="px-5 md:px-20 mb-32">
 <p class="text-2xl font-semibold text-MyBlue">Phương thức liên lạc</p>
 <div class="mt-8 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
 <div class="bg-white text-MyBlue rounded-md border border-gray-200 p-5 shadow-xl hover:bg-MyBlue hover:text-white flex flex-col justify-between">
@@ -125,8 +107,8 @@
 </div>
 </div>
 </div>
-<footer class="bg-MyBlue px-10 md:px-20 pt-20 pb-5 text-white">
-<div class="flex justify-between flex-wrap gap-5 xl:gap-14">
+<footer class="bg-MyBlue px-5 md:px-20 pt-20 pb-5 text-white">
+<div class="flex justify-center min-[285px]:justify-between flex-wrap gap-5 xl:gap-14">
 <div class>
 <img src=/images/logo.png alt class=h-20>
 <div class="flex gap-6 w-fit mx-auto mt-7">

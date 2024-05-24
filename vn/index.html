@@ -11,7 +11,7 @@
 <link rel=stylesheet href=/stylesheet/shakeBtn.css>
 <link rel=preconnect href=https://fonts.googleapis.com>
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300;500;600;700&display=swap" rel=stylesheet><style>body{font-family:"Encode Sans Expanded",sans-serif}</style>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap" rel=stylesheet><style>body{font-family:"Encode Sans Expanded",sans-serif}</style>
 <audio id=tingSound>
 <source src=/ting.MP3 type=audio/mpeg>
 Your browser does not support the audio element.
@@ -25,7 +25,7 @@ Your browser does not support the audio element.
 </div>
 </a>
 <div class="fixed w-full top-0 z-10">
-<nav class="bg-MyBlue py-3 px-10 md:px-20 flex justify-between items-center">
+<nav class="bg-MyBlue py-3 px-5 md:px-20 flex justify-between items-center">
 <a href=/index.html>
 <img src=/images/logo2.png alt="Logo Trường Anh Ngữ Sam" class=h-11>
 </a>
@@ -49,20 +49,21 @@ Your browser does not support the audio element.
 <input hidden type=checkbox id=mobile-navbar class=checkbox-navbar>
 <label class="block lg:hidden" for=mobile-navbar><i class="fa-solid fa-bars text-2xl text-white"></i></label>
 <label for=mobile-navbar class=nav__overlay></label>
-<div class="responsive-navbar fixed top-0 flex flex-col gap-8 px-8 py-12 bg-white w-1/2 h-full left-0 text-xl text-center">
+<div class="responsive-navbar fixed top-0 flex flex-col gap-8 px-8 py-12 bg-white w-4/5 h-full left-0 text-xl text-center">
 <img src=/images/roundedsam.png alt="Logo Trường Anh Ngữ Sam" class="h-20 object-contain">
 <a href=/vn/index.html class=hover:text-MyYellow>Trang Chủ</a>
 <a href=/vn/courses.html class=hover:text-MyYellow>Khóa Học</a>
 <a href=/vn/teachers.html class=hover:text-MyYellow>Giáo Viên</a>
 <a href=/vn/career.html class=hover:text-MyYellow>Tuyển Dụng</a>
 <a href=/vn/about.html class=hover:text-MyYellow>Về Chúng Tôi</a>
+<a href=/vn/contact.html class=hover:text-MyYellow>Liên Lạc</a>
 <a href=index.html class=hover:text-MyYellow>English</a>
 <a href=/vn/index.html class=hover:text-MyYellow>Viet Nam</a>
 </div>
 </nav>
-<div class="w-full z-10 p-3 flex justify-center text-lg font-medium text-white" style="background:linear-gradient(138deg,#20c9ff 36.7%,#0008bb 84.4%,#ffffff 119.7%)">Quét mã QR Zalo và đăng ký "LỚP HỌC THỬ MIỄN PHÍ" <button id=show_popup class="ml-2 hover:underline font-bold text-xl">Quét Ngay</button></div>
+<div class="w-full z-10 p-3 flex justify-center text-sm sm:text-lg font-medium text-white flex-wrap text-center" style="background:linear-gradient(138deg,#20c9ff 36.7%,#0008bb 84.4%,#ffffff 119.7%)">Quét mã QR Zalo và đăng ký "LỚP HỌC THỬ MIỄN PHÍ" <button id=show_popup class="ml-2 hover:underline font-bold text-xl">Quét Ngay</button></div>
 </div>
-<div id=popup class="hidden fixed top-0 bottom-0 left-0 right-0 bg-black bg-opacity-50 z-20">
+<div id=popup class="overflow-y-scroll pb-12 hidden fixed top-0 bottom-0 left-0 right-0 bg-black bg-opacity-50 z-20">
 <div class="bg-white mx-auto w-4/5 md:w-3/5 lg:w-5/6 xl:w-4/6 h-fit rounded-lg mt-28">
 <div class="border-b border-gray-300 px-5 py-3 flex justify-between items-center">
 <p class="text-xl font-semibold text-MyBlue">Trường Anh Ngữ Sam</p>
@@ -79,11 +80,11 @@ Your browser does not support the audio element.
 </div>
 </div>
 </div>
-<div class="px-10 md:px-20 h-screen banner">
-<div class="text-white flex flex-col justify-center h-full w-full sm:w-2/3 lg:w-1/2 gap-6">
-<p class="text-3xl sm:text-5xl font-semibold" style=line-height:1.2>Hành trình <span class=text-MyYellow> tiếng Anh của bạn</span> bắt đầu từ đây!</p>
+<div class="px-5 md:px-20 h-screen banner">
+<div class="text-white flex flex-col justify-center mt-20 min-[316px]:mt-0 h-full w-full sm:w-2/3 lg:w-1/2 gap-6">
+<p class="text-3xl sm:text-5xl font-semibold mt-28" style=line-height:1.2>Hành trình <span class=text-MyYellow> tiếng Anh của bạn</span> bắt đầu từ đây!</p>
 <p>Tại Trường Anh Ngữ Sam, chúng tôi tin tưởng vào cách tiếp cận cá nhân hóa để học tập. Hiểu rằng mỗi học sinh có nhu cầu và mục tiêu riêng, chương trình giảng dạy và phương pháp giảng dạy của chúng tôi được thiết kế cẩn thận để phù hợp với sở thích và phong cách học tập cá nhân</p>
-<div class="flex gap-3">
+<div class="flex gap-3 flex-wrap">
 <a href=#Courses class="flex items-center gap-2 border border-white rounded-full py-3 px-4 hover:bg-MyBlue hover:border-MyBlue">
 <p>Khóa Học</p>
 <i class="fa-solid fa-arrow-right"></i>
@@ -95,8 +96,8 @@ Your browser does not support the audio element.
 </div>
 </div>
 </div>
-<div class="w-full bg-MyYellow py-3 flex justify-center text-lg font-medium">Với 120 lớp học mỗi năm, luôn có lớp phù hợp với lịch trình của bạn</div>
-<div class="px-10 md:px-20 py-28">
+<div class="w-full bg-MyYellow py-3 flex justify-center text-sm sm:text-lg p-3 text-center font-medium">Chúng tôi là những người tạo ra sự thay đổi. Chúng tôi giáo dục, chúng tôi khuyến khích và truyền cảm hứng</div>
+<div class="px-5 md:px-20 py-28">
 <div class="w-full lg:w-1/2 text-center mx-auto">
 <p class="text-3xl font-semibold mb-3">Tại Sao Chọn <span class=text-MyOrange>Trường Anh Ngữ Sam</span></p>
 <p class="text-base leading-7">
@@ -131,16 +132,16 @@ Giảng Dạy Chuyên Sâu
 </div>
 </div>
 </div>
-<div class="feedback_container flex flex-col gap-12 items-center relative text-center bg-MyBlue py-20 text-white mt-5 mb-32">
-<div class="next-feedback absolute top-1/2 w-fit left-5 sm:left-10 lg:left-20 text-5xl hover:cursor-pointer hover:text-MyYellow"><i class="fa-solid fa-angle-left"></i></div>
-<div class="prev-feedback absolute top-1/2 w-fit right-5 sm:right-10 lg:right-20 text-5xl hover:cursor-pointer hover:text-MyYellow"><i class="fa-solid fa-angle-right"></i></div>
-<p class="text-3xl font-bold">Phản hồi của học sinh về <span class=text-MyYellow>Sam's English School</span></p>
-<div class="hidden flex-col gap-8 w-3/5 feedback active text-base">
+<div class="feedback_container flex flex-col gap-12 items-center relative text-center bg-MyBlue pt-20 pb-28 sm:py-20 text-white mt-5 mb-32">
+<div class="next-feedback absolute bottom-5 sm:top-1/2 w-fit left-10 sm:left-10 lg:left-20 text-5xl hover:cursor-pointer hover:text-MyYellow"><i class="fa-solid fa-angle-left"></i></div>
+<div class="prev-feedback absolute bottom-5 sm:top-1/2 w-fit right-10 sm:right-10 lg:right-20 text-5xl hover:cursor-pointer hover:text-MyYellow"><i class="fa-solid fa-angle-right"></i></div>
+<p class="text-3xl font-bold px-5">Phản hồi của học sinh về <span class=text-MyYellow>Sam's English School</span></p>
+<div class="hidden flex-col gap-8 px-5 sm:w-4/6 feedback active text-base">
 <p class>Em đã tham gia khóa học IELTS trực tuyến tại Sam's English School và rất ấn tượng với chất lượng giảng dạy. Các giáo viên rất am hiểu và đưa ra phản hồi cá nhân giúp em cải thiện những điểm yếu của mình. Nhờ có Sam's English School, em đã đạt được điểm band 8.0!</p>
 <div class="flex flex-col md:flex-row gap-10 md:gap-5 justify-between items-center">
-<div class="flex gap-5 items-center">
+<div class="flex gap-5 items-center flex-wrap justify-center">
 <img class="rounded-full h-20 w-20 object-cover" src=/images/student1.png alt>
-<div class=text-left>
+<div class="text-center sm:text-left">
 <p class=font-semibold>Trần Thị Thu Hà</p>
 <p class=font-light>IELTS</p>
 </div>
@@ -154,12 +155,12 @@ Giảng Dạy Chuyên Sâu
 </div>
 </div>
 </div>
-<div class="hidden flex-col gap-8 w-3/5 feedback text-base">
+<div class="hidden flex-col gap-8 px-5 sm:w-4/6 feedback text-base">
 <p class>Khóa kỹ năng giao tiếp một kèm một tại Sam's English School là chính xác những gì em cần để tăng cường sự tự tin của mình. Sự tận tâm từ gia sư của tôi đã giúp em tiến bộ theo lộ trình của riêng mình và em cảm thấy tự tin hơn nhiều trong khả năng giao tiếp của mình.</p>
 <div class="flex flex-col md:flex-row gap-10 md:gap-5 justify-between items-center">
-<div class="flex gap-5 items-center">
+<div class="flex gap-5 items-center flex-wrap justify-center">
 <img class="rounded-full h-20 w-20 object-cover" src=/images/student2.jpg alt>
-<div class=text-left>
+<div class="text-center sm:text-left">
 <p class=font-semibold>Bùi Quang Minh</p>
 <p class=font-light>Chương trình Cambridge</p>
 </div>
@@ -173,12 +174,12 @@ Giảng Dạy Chuyên Sâu
 </div>
 </div>
 </div>
-<div class="hidden flex-col gap-8 w-3/5 feedback text-base">
+<div class="hidden flex-col gap-8 px-5 sm:w-4/6 feedback text-base">
 <p class>Học tại Sam's English School thật sự rất vui! Mặc dù cháu chỉ mới 10 tuổi, các giáo viên đã khiến việc học tiếng Anh thú vị. Đặc biệt, có các trò chơi và hoạt động thú vị giúp cháu nhớ các từ và cụm từ mới. Giáo viên của cháu rất tốt bụng và luôn khuyến khích cháu phát biểu.</p>
 <div class="flex flex-col md:flex-row gap-10 md:gap-5 justify-between items-center">
-<div class="flex gap-5 items-center">
+<div class="flex gap-5 items-center flex-wrap justify-center">
 <img class="rounded-full h-20 w-20 object-cover" src=/images/student3.jpg alt>
-<div class=text-left>
+<div class="text-center sm:text-left">
 <p class=font-semibold>Thanh Vinh</p>
 <p class=font-light>Khóa học tiếng Anh cho trẻ em (Trực tuyến)</p>
 </div>
@@ -193,7 +194,7 @@ Giảng Dạy Chuyên Sâu
 </div>
 </div>
 </div>
-<div class="px-14 md:px-20 pt-12 pb-20 flex flex-col lg:flex-row justify-between items-center gap-14 xl:gap-32">
+<div class="px-8 md:px-20 pt-12 pb-20 flex flex-col lg:flex-row justify-between items-center gap-14 xl:gap-32">
 <div class="relative circle-behind-title">
 <p class="text-2xl mb-2 font-semibold text-MyBlue">
 Trường Anh Ngữ Sam: Con Đường Đến Với Sự Thành Thạo Tiếng Anh Với Sự Hướng Dẫn Và Hỗ Trợ Chuyên Nghiệp</p>
@@ -205,7 +206,7 @@ Trường Anh Ngữ Sam: Con Đường Đến Với Sự Thành Thạo Tiếng A
 </div>
 </div>
 <div id=Programs class=pb-20></div>
-<div class="bg-MyBlue px-14 md:px-24 py-14">
+<div class="bg-MyBlue px-10 md:px-24 py-14">
 <div class="flex flex-col items-center gap-4 w-full mx-auto text-center">
 <p class="text-MyDarkYellow text-base font-medium">CHƯƠNG TRÌNH ĐẶC BIỆT</p>
 <p class="text-white text-4xl font-medium">Các Chương Trình Tốt Nhất Được Giảng Dạy<br> Bởi Những Giảng Viên Tốt Nhất</p>
@@ -258,7 +259,7 @@ Trường Anh Ngữ Sam: Con Đường Đến Với Sự Thành Thạo Tiếng A
 </button>
 </div>
 </div>
-<div class="px-10 md:px-20 py-28">
+<div class="px-5 md:px-20 py-28">
 <div class="w-full lg:w-1/2 text-center mx-auto">
 <p class="text-3xl font-semibold mb-3 text-MyBlue">Các Khoá Học<span class=text-MyDarkYellow> Đã Thực Hiện</span></p>
 <p class="text-base leading-7">
@@ -280,8 +281,8 @@ Hãy xem những câu chuyện thành công của các học viên<br> đã xu�
 <button id=shuffleButton class="px-4 py-2 mt-5 border border-MyBlue rounded-full hover:bg-MyBlue hover:text-white">Xem Thêm Hình Ảnh</button>
 </div>
 </div>
-<footer class="bg-MyBlue px-10 md:px-20 pt-20 pb-5 text-white">
-<div class="flex justify-between flex-wrap gap-5 xl:gap-14">
+<footer class="bg-MyBlue px-5 md:px-20 pt-20 pb-5 text-white">
+<div class="flex justify-center min-[285px]:justify-between flex-wrap gap-5 xl:gap-14">
 <div class>
 <img src=/images/logo.png alt class=h-20>
 <div class="flex gap-6 w-fit mx-auto mt-7">
